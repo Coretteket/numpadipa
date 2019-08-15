@@ -1,11 +1,13 @@
-﻿; NUMPADIPA /nʊm.pəˈdaɪ.pə/
+﻿; NUMPADIPA /ˌnʊm.pəˈdaɪ.pə/
 ;   An IPA keyboard layout that makes use of the numpad and three new deadkeys to type the 'entire' IPA.
 ;
 ; KNOWN BUGS
-;   "ø" is not supported natively for... some reason
+;   "ø" is not supported natively for some reason; alt-code used
 ;   Numpad keys do not support the three deadkeys, need to be held
+;   Combo is Shift + Numpad8 + vowel instead of natural Numpad8 + Shift + vowel
+;   Numlock might be useless, go to Control Panel > Accesibility > Mouse... and turn it off
 
-SetNumLockState, Off
+;SetNumLockState, Off
 
 ; DEADKEY
 fort := {  a: "ɐ"
@@ -82,6 +84,7 @@ len := {   a: "ɑ"
          , 9: "᷉"
          , 0: "ꜜ"}
 
+
 alter := { a: "æ"
          , b: "ɓ"
          , c: "→"
@@ -118,190 +121,229 @@ alter := { a: "æ"
          , 8: "⁸"
          , 9: "⁹"
          , 0: "⁰"}
-
+smacron := {A: "Ā"
+           ,Q: "ǣ"
+           ,E: "ē"
+           ,G: "ḡ"
+           ,I: "Ī"
+           ,O: "Ō"
+           ,U: "Ū"
+           ,Y: "Ȳ"}
+macron := {a: "ā"
+          ,q: "ǣ"
+          ,e: "ē"
+          ,g: "ḡ"
+          ,i: "ī"
+          ,o: "ō"
+          ,u: "ū"
+          ,y: "ȳ"}
+scircum := {C: "Ĉ"}
+circum := {c: "ĉ"}
 ; HOLDKEY
 ;   QWERTY
-NumpadAdd & a::Send ɐ
-NumpadEnter & a::Send ɑ
-NumpadIns & a::Send æ
+    NumpadAdd & a::Send ɐ
+    NumpadEnter & a::Send ɑ
+    NumpadIns & a::Send æ
 
-NumpadAdd & b::Send ʙ
-NumpadEnter & b::Send β
-NumpadIns & b::Send ɓ
+    NumpadAdd & b::Send ʙ
+    NumpadEnter & b::Send β
+    NumpadIns & b::Send ɓ
 
-NumpadAdd & c::Send ɟ
-NumpadEnter & c::Send ç
-NumpadIns & c::Send →
+    NumpadAdd & c::Send ɟ
+    NumpadEnter & c::Send ç
+    NumpadIns & c::Send →
 
-NumpadAdd & d::Send ɖ
-NumpadEnter & d::Send ð
-NumpadIns & d::Send ɗ
+    NumpadAdd & d::Send ɖ
+    NumpadEnter & d::Send ð
+    NumpadIns & d::Send ɗ
 
-NumpadAdd & e::Send ɛ
-NumpadEnter & e::Send ə
-NumpadIns & e::Send ø
+    NumpadAdd & e::Send ɛ
+    NumpadEnter & e::Send ə
+    NumpadIns & e::Send ø
 
-NumpadAdd & f::Send ʋ
-NumpadEnter & f::Send ɸ
-NumpadIns & f::Send ɶ
+    NumpadAdd & f::Send ʋ
+    NumpadEnter & f::Send ɸ
+    NumpadIns & f::Send ɶ
 
-NumpadAdd & g::Send ɠ
-NumpadEnter & g::Send ʛ
-NumpadIns & g::Send ɡ
+    NumpadAdd & g::Send ɠ
+    NumpadEnter & g::Send ʛ
+    NumpadIns & g::Send ɡ
 
-NumpadAdd & h::Send ɦ
-NumpadEnter & h::Send ħ
-NumpadIns & h::Send ʜ
+    NumpadAdd & h::Send ɦ
+    NumpadEnter & h::Send ħ
+    NumpadIns & h::Send ʜ
 
-NumpadAdd & i::Send ɨ
-NumpadEnter & i::Send ɪ
-NumpadIns & i::Send ɘ
+    NumpadAdd & i::Send ɨ
+    NumpadEnter & i::Send ɪ
+    NumpadIns & i::Send ɘ
 
-NumpadAdd & j::Send ʎ
-NumpadEnter & j::Send ʝ
-NumpadIns & j::Send ʟ
+    NumpadAdd & j::Send ʎ
+    NumpadEnter & j::Send ʝ
+    NumpadIns & j::Send ʟ
 
-NumpadAdd & k::Send ʔ
-NumpadEnter & k::Send ʡ
-NumpadIns & k::Send ʢ
+    NumpadAdd & k::Send ʔ
+    NumpadEnter & k::Send ʡ
+    NumpadIns & k::Send ʢ
 
-NumpadAdd & l::Send ɬ
-NumpadEnter & l::Send ɮ
-NumpadIns & l::Send ɭ
+    NumpadAdd & l::Send ɬ
+    NumpadEnter & l::Send ɮ
+    NumpadIns & l::Send ɭ
 
-NumpadAdd & m::Send ɜ
-NumpadEnter & m::Send ɞ
-NumpadIns & m::Send ɱ
+    NumpadAdd & m::Send ɜ
+    NumpadEnter & m::Send ɞ
+    NumpadIns & m::Send ɱ
 
-NumpadAdd & n::Send ŋ
-NumpadEnter & n::Send ɲ
-NumpadIns & n::Send ɳ
+    NumpadAdd & n::Send ŋ
+    NumpadEnter & n::Send ɲ
+    NumpadIns & n::Send ɳ
 
-NumpadAdd & o::Send ɒ
-NumpadEnter & o::Send ɔ
-NumpadIns & o::Send ɵ
+    NumpadAdd & o::Send ɒ
+    NumpadEnter & o::Send ɔ
+    NumpadIns & o::Send ɵ
 
-NumpadAdd & p::Send ɽ
-NumpadEnter & p::Send ɻ
-NumpadIns & p::Send ∅
+    NumpadAdd & p::Send ɽ
+    NumpadEnter & p::Send ɻ
+    NumpadIns & p::Send ∅
 
-NumpadAdd & q::Send ʀ
-NumpadEnter & q::Send ʁ
-NumpadIns & q::Send ɴ
+    NumpadAdd & q::Send ʀ
+    NumpadEnter & q::Send ʁ
+    NumpadIns & q::Send ɴ
 
-NumpadAdd & r::Send ɾ
-NumpadEnter & r::Send ɹ
-NumpadIns & r::Send ʁ
+    NumpadAdd & r::Send ɾ
+    NumpadEnter & r::Send ɹ
+    NumpadIns & r::Send ʁ
 
-NumpadAdd & s::Send ʃ
-NumpadEnter & s::Send ʂ
-NumpadIns & s::Send ɕ
+    NumpadAdd & s::Send ʃ
+    NumpadEnter & s::Send ʂ
+    NumpadIns & s::Send ɕ
 
-NumpadAdd & t::Send ʈ
-NumpadEnter & t::Send θ
-NumpadIns & t::Send þ
+    NumpadAdd & t::Send ʈ
+    NumpadEnter & t::Send θ
+    NumpadIns & t::Send þ
 
-NumpadAdd & u::Send ʉ
-NumpadEnter & u::Send ʊ
-NumpadIns & u::Send ɯ
+    NumpadAdd & u::Send ʉ
+    NumpadEnter & u::Send ʊ
+    NumpadIns & u::Send ɯ
 
-NumpadAdd & v::Send ⱱ
-NumpadEnter & v::Send ɥ
-NumpadIns & v::Send ʌ
+    NumpadAdd & v::Send ⱱ
+    NumpadEnter & v::Send ɥ
+    NumpadIns & v::Send ʌ
 
-NumpadAdd & w::Send ɰ
-NumpadEnter & w::Send ʍ
-NumpadIns & w::Send ɧ
+    NumpadAdd & w::Send ɰ
+    NumpadEnter & w::Send ʍ
+    NumpadIns & w::Send ɧ
 
-NumpadAdd & x::Send ɣ
-NumpadEnter & x::Send χ
-NumpadIns & x::Send ʕ
+    NumpadAdd & x::Send ɣ
+    NumpadEnter & x::Send χ
+    NumpadIns & x::Send ʕ
 
-NumpadAdd & y::Send œ
-NumpadEnter & y::Send ʏ
-NumpadIns & y::Send ɤ
+    NumpadAdd & y::Send œ
+    NumpadEnter & y::Send ʏ
+    NumpadIns & y::Send ɤ
 
-NumpadAdd & z::Send ʒ
-NumpadEnter & z::Send ʐ
-NumpadIns & z::Send ʑ
+    NumpadAdd & z::Send ʒ
+    NumpadEnter & z::Send ʐ
+    NumpadIns & z::Send ʑ
 
-NumpadAdd & 1::Send ̏
-NumpadEnter & 1::Send ˩
-NumpadIns & 1::Send ¹
+    NumpadAdd & 1::Send ̏
+    NumpadEnter & 1::Send ˩
+    NumpadIns & 1::Send ¹
 
-NumpadAdd & 2::Send ̀
-NumpadEnter & 2::Send ˨
-NumpadIns & 2::Send ²
+    NumpadAdd & 2::Send ̀
+    NumpadEnter & 2::Send ˨
+    NumpadIns & 2::Send ²
 
-NumpadAdd & 3::Send ̄
-NumpadEnter & 3::Send ˧
-NumpadIns & 3::Send ³
+    NumpadAdd & 3::Send ̄
+    NumpadEnter & 3::Send ˧
+    NumpadIns & 3::Send ³
 
-NumpadAdd & 4::Send ́
-NumpadEnter & 4::Send ˦
-NumpadIns & 4::Send ⁴
+    NumpadAdd & 4::Send ́
+    NumpadEnter & 4::Send ˦
+    NumpadIns & 4::Send ⁴
 
-NumpadAdd & 5::Send ̋
-NumpadEnter & 5::Send ˥
-NumpadIns & 5::Send ⁵
+    NumpadAdd & 5::Send ̋
+    NumpadEnter & 5::Send ˥
+    NumpadIns & 5::Send ⁵
 
-NumpadAdd & 6::Send ̌
-NumpadEnter & 6::Send ̂
-NumpadIns & 6::Send ⁶
+    NumpadAdd & 6::Send ̌
+    NumpadEnter & 6::Send ̂
+    NumpadIns & 6::Send ⁶
 
-NumpadAdd & 7::Send ᷄
-NumpadEnter & 7::Send ᷅
-NumpadIns & 7::Send ⁷
+    NumpadAdd & 7::Send ᷄
+    NumpadEnter & 7::Send ᷅
+    NumpadIns & 7::Send ⁷
 
-NumpadAdd & 8::Send ᷇
-NumpadEnter & 8::Send ᷆
-NumpadIns & 8::Send ⁸
+    NumpadAdd & 8::Send ᷇
+    NumpadEnter & 8::Send ᷆
+    NumpadIns & 8::Send ⁸
 
-NumpadAdd & 9::Send ᷈
-NumpadEnter & 9::Send ᷉
-NumpadIns & 9::Send ⁹
+    NumpadAdd & 9::Send ᷈
+    NumpadEnter & 9::Send ᷉
+    NumpadIns & 9::Send ⁹
 
-NumpadAdd & 0::Send ꜛ
-NumpadEnter & 0::Send ꜜ
-NumpadIns & 0::Send ⁰
+    NumpadAdd & 0::Send ꜛ
+    NumpadEnter & 0::Send ꜜ
+    NumpadIns & 0::Send ⁰
 
 ;   NUMPAD
-NumpadDel::Send ʘ 
-NumpadAdd & NumpadDel::Send ǂ
-NumpadEnter & NumpadDel::Send ǁ
-NumpadIns & NumpadDel::Send ʄ
+    NumpadDel::Send ʘ 
+    NumpadAdd & NumpadDel::Send ǂ
+    NumpadEnter & NumpadDel::Send ǁ
+    NumpadIns & NumpadDel::Send ʄ
 
-NumpadMult::Send ˈ
-NumpadAdd & NumpadMult::Send ↗︎
-NumpadEnter & NumpadMult::Send ↘︎
-NumpadIns & NumpadMult::Send ˌ
+    NumpadMult::Send ˈ
+    NumpadAdd & NumpadMult::Send ↗︎
+    NumpadEnter & NumpadMult::Send ↘︎
+    NumpadIns & NumpadMult::Send ˌ
 
-NumpadSub::Send ‿
-NumpadAdd & NumpadSub::Send ‖
-NumpadEnter & NumpadSub::Send |
-NumpadIns & NumpadSub::Send .
+    NumpadSub::Send ‿
+    NumpadAdd & NumpadSub::Send ‖
+    NumpadEnter & NumpadSub::Send |
+    NumpadIns & NumpadSub::Send .
 
-NumpadHome::Send ː
-NumpadAdd & NumpadHome::Send ːː
-NumpadEnter & NumpadHome::Send ̆
-NumpadIns & NumpadHome::Send ˑ
+    NumpadHome::Send ː
+    NumpadAdd & NumpadHome::Send ːː
+    NumpadEnter & NumpadHome::Send ̆
+    NumpadIns & NumpadHome::Send ˑ
 
-NumpadAdd::
- Input, key, C L1 M I, {LControl}{RControl}{LAlt}{RAlt}{LShift}{RShift}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}
- SendInput % fort[key]
-return
+    NumpadPgup::Send ̥
+    Numpad9::Send ̊
+    NumpadAdd & NumpadPgup::Send ̩
+    NumpadAdd & Numpad9::Send ̍
+    NumpadEnter & NumpadPgup::Send ̯ 
+    NumpadEnter & Numpad9::Send ̑
+    NumpadIns & NumpadPgup::Send ̬
+    NumpadIns & Numpad9::Send ̌
 
-NumpadEnter:: 
- Input, key, C L1 M I, {LControl}{RControl}{LAlt}{RAlt}{LShift}{RShift}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}
- SendInput % len[key]
-return
+; HOTARRAY
+    NumpadAdd::
+    Input, key, C L1 M I, {LControl}{RControl}{LAlt}{RAlt}{LShift}{RShift}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}
+    SendInput % fort[key]
+    return
 
-NumpadIns:: 
- Input, key, C L1 M I, {LControl}{RControl}{LAlt}{RAlt}{LShift}{RShift}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}
- SendInput % alter[key]
-return
+    NumpadEnter:: 
+    Input, key, C L1 M I, {LControl}{RControl}{LAlt}{RAlt}{LShift}{RShift}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}
+    SendInput % len[key]
+    return
 
-; %A_ThisHotkey%
+    NumpadIns:: 
+    Input, key, C L1 M I, {LControl}{RControl}{LAlt}{RAlt}{LShift}{RShift}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}
+    SendInput % alter[key]
+    return
 
+    Shift & NumpadUp::Send {Numpad8}
+    NumpadUp::
+    Input, key, C L1 M I, {LControl}{RControl}{LAlt}{RAlt}{LShift}{RShift}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}
+    SendInput % macron[key]
+    return
+    Numpad8::
+    Input, key, C L1 M I, {LControl}{RControl}{LAlt}{RAlt}{LShift}{RShift}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}
+    SendInput % smacron[key]
+    return
 
+    ; OTHER
+        Shift & 6::
+        if GetKeyState("w")
+            Send ŵ
+        return
 
