@@ -1,3 +1,5 @@
 # NumpadIPA
-> **numpadipa** /nəm.pəˈ.da͡ɪ.pə/ *n.* - An IPA keyboard layout that makes use of the numpad and three new deadkeys to type the 'entire' IPA.
+> **numpadipa** /ˌnʊm.pəˈdaɪ.pə/ *n.* - a keyboard layout that uses the numpad keys, allowing the user to type the "entire" International Phonetic Alphabet.
 
+### Introduction
+What follows here is the exhaustive documentation of NumpadIPA.
