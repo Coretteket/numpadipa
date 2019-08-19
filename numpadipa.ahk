@@ -127,21 +127,59 @@ SetBatchLines, -1
             , 9: "⁹"
             , 0: "⁰"}
     smacron := {a: "Ā"
-            ,q: "Ǣ"
+            ,1: "Ǣ"
+            ,b: "B̄" ;
+            ,c: "C̄" ;
+            ,d: "D̄" ;
             ,e: "Ē"
+            ,f: "F̄" ;
             ,g: "Ḡ"
+            ,h: "H̄" ;
             ,i: "Ī"
+            ,j: "J̄" ;
+            ,k: "K̄" ;
+            ,l: "L̄" ;
+            ,m: "M̄" ;
+            ,n: "N̄" ;
             ,o: "Ō"
+            ,p: "P̄" ;
+            ,q: "Q̄" ;
+            ,r: "R̄" ;
+            ,s: "S̄" ;
+            ,t: "T̄" ;
             ,u: "Ū"
-            ,y: "Ȳ"}
+            ,v: "V̄" ;
+            ,w: "W̄" ;
+            ,x: "X̄" ;
+            ,y: "Ȳ"
+            ,z: "Z̄"} ;
     macron := {a: "ā"
-            ,q: "ǣ"
+            ,1: "ǣ"
+            ,b: "b̄" ;
+            ,c: "c̄" ;
+            ,d: "d̄" ;
             ,e: "ē"
+            ,f: "f̄" ;
             ,g: "ḡ"
+            ,h: "h̄" ;
             ,i: "ī"
+            ,j: "j̄" ;
+            ,k: "k̄" ;
+            ,l: "l̄" ;
+            ,m: "m̄" ;
+            ,n: "n̄" ;
             ,o: "ō"
+            ,p: "p̄" ;
+            ,q: "q̄" ;
+            ,r: "r̄" ;
+            ,s: "s̄" ;
+            ,t: "t̄" ;
             ,u: "ū"
-            ,y: "ȳ"}
+            ,v: "v̄" ;
+            ,w: "w̄" ;
+            ,x: "x̄" ;
+            ,y: "ȳ"
+            ,z: "z̄"} ;
     caron := {a: "ǎ"
             ,c: "č"
             ,d: "ď"
@@ -166,7 +204,9 @@ SetBatchLines, -1
             ,w: "w̌" ;
             ,x: "x̌" ;
             ,y: "y̌" ;
-            ,z: "ž"}
+            ,z: "ž"
+            ,1: "æ̌" ;
+            ,2: "ǯ"}
     scaron := {a: "Ǎ"
             ,c: "Č"
             ,d: "Ď"
@@ -199,7 +239,7 @@ SetBatchLines, -1
             ,i: "į"
             ,o: "ǫ" 
             ,u: "ų"
-            ,w: "w̨"} ;     
+            ,w: "w̨"} ; 
     sogonek := {a: "Ą" 
             ,e: "Ę"
             ,i: "Į"
@@ -233,34 +273,32 @@ SetBatchLines, -1
         ,x: "x̣" ;
         ,y: "ỵ"
         ,z: "ẓ"}
-    dot := {a: "Ạ"
+    sdot := {a: "Ạ"
         ,b: "Ḅ"
-        ,c: "c̣" ;
+        ,c: "C̣" ;
         ,d: "Ḍ"
         ,e: "Ẹ"
-        ,f: "f̣" ;
+        ,f: "F̣" ;
         ,g: "g̣" ;
         ,h: "Ḥ"
         ,i: "Ị"
-        ,j: "j̣" ;
+        ,j: "J̣" ;
         ,k: "Ḳ"
         ,l: "Ḷ"
         ,m: "Ṃ"
         ,n: "Ṇ"
         ,o: "Ọ"
         ,p: "p̣" ;
-        ,q: "q̣" ;
+        ,q: "Q̣" ;
         ,r: "Ṛ"
         ,s: "Ṣ"
         ,t: "Ṭ"
         ,u: "Ụ"
         ,v: "Ṿ"
         ,w: "Ẉ"
-        ,x: "x̣" ;
+        ,x: "X̣" ;
         ,y: "Ỵ"
         ,z: "Ẓ"}
-
-
 
 ; HOLDKEY
 ;   QWERTY
@@ -487,21 +525,21 @@ SetBatchLines, -1
     NumpadAdd & NumpadRight::Send ̰
     NumpadEnter & NumpadRight::Send ̤
     NumpadIns & NumpadRight::Send ̴
-    :*:l̴::ɫ
+    
 ; PRECOMPOSED 
     LShift & NumpadClear::Send {NumpadClear}
     LShift & NumpadEnter::Send {Help}
     LShift & NumpadAdd::Send {Help}
-    
+
     NumpadClear::
     loop
     {
     If GetKeyState("LShift", "P") {
-        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}
+        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}{NumpadDiv}{NumpadMult}{NumpadSub}{NumpadHome}{Numpad7}{NumpadUp}{Numpad8}{NumpadPgup}{Numpad9}{NumpadLeft}{Numpad4}{NumpadClear}{Numpad5}{NumpadRight}{Numpad6}{NumpadEnd}{Numpad1}{NumpadDown}{Numpad2}{NumpadPgdn}{Numpad3}{NumpadAdd}{NumpadEnter}{NumpadIns}{Numpad0}{NumpadDot}{NumpadDel}
         SendInput % smacron[key]
         break
     } else { 
-        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}
+        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}{NumpadDiv}{NumpadMult}{NumpadSub}{NumpadHome}{Numpad7}{NumpadUp}{Numpad8}{NumpadPgup}{Numpad9}{NumpadLeft}{Numpad4}{NumpadClear}{Numpad5}{NumpadRight}{Numpad6}{NumpadEnd}{Numpad1}{NumpadDown}{Numpad2}{NumpadPgdn}{Numpad3}{NumpadAdd}{NumpadEnter}{NumpadIns}{Numpad0}{NumpadDot}{NumpadDel}
         SendInput % macron[key]
         break
     }
@@ -511,38 +549,39 @@ SetBatchLines, -1
     loop
     {
     If GetKeyState("LShift", "P") {
-        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}}
+        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}{NumpadDiv}{NumpadMult}{NumpadSub}{NumpadHome}{Numpad7}{NumpadUp}{Numpad8}{NumpadPgup}{Numpad9}{NumpadLeft}{Numpad4}{NumpadClear}{Numpad5}{NumpadRight}{Numpad6}{NumpadEnd}{Numpad1}{NumpadDown}{Numpad2}{NumpadPgdn}{Numpad3}{NumpadAdd}{NumpadEnter}{NumpadIns}{Numpad0}{NumpadDot}{NumpadDel}
         SendInput % scaron[key]
         break
     } else { 
-        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}}
+        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}{NumpadDiv}{NumpadMult}{NumpadSub}{NumpadHome}{Numpad7}{NumpadUp}{Numpad8}{NumpadPgup}{Numpad9}{NumpadLeft}{Numpad4}{NumpadClear}{Numpad5}{NumpadRight}{Numpad6}{NumpadEnd}{Numpad1}{NumpadDown}{Numpad2}{NumpadPgdn}{Numpad3}{NumpadAdd}{NumpadEnter}{NumpadIns}{Numpad0}{NumpadDot}{NumpadDel}
         SendInput % caron[key]
         break
     }
     }
     return 
     NumpadEnter & NumpadClear::
-    loop
+    loop 
     {
     If GetKeyState("LShift", "P") {
-        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}}
+        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}{NumpadDiv}{NumpadMult}{NumpadSub}{NumpadHome}{Numpad7}{NumpadUp}{Numpad8}{NumpadPgup}{Numpad9}{NumpadLeft}{Numpad4}{NumpadClear}{Numpad5}{NumpadRight}{Numpad6}{NumpadEnd}{Numpad1}{NumpadDown}{Numpad2}{NumpadPgdn}{Numpad3}{NumpadAdd}{NumpadEnter}{NumpadIns}{Numpad0}{NumpadDot}{NumpadDel}
         SendInput % sogonek[key]
         break
     } else { 
-        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}}
+        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}{NumpadDiv}{NumpadMult}{NumpadSub}{NumpadHome}{Numpad7}{NumpadUp}{Numpad8}{NumpadPgup}{Numpad9}{NumpadLeft}{Numpad4}{NumpadClear}{Numpad5}{NumpadRight}{Numpad6}{NumpadEnd}{Numpad1}{NumpadDown}{Numpad2}{NumpadPgdn}{Numpad3}{NumpadAdd}{NumpadEnter}{NumpadIns}{Numpad0}{NumpadDot}{NumpadDel}
         SendInput % ogonek[key]
         break
     }
     }
+    return
     NumpadIns & NumpadClear::
     loop
     {
     If GetKeyState("LShift", "P") {
-        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}}
+        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}{NumpadDiv}{NumpadMult}{NumpadSub}{NumpadHome}{Numpad7}{NumpadUp}{Numpad8}{NumpadPgup}{Numpad9}{NumpadLeft}{Numpad4}{NumpadClear}{Numpad5}{NumpadRight}{Numpad6}{NumpadEnd}{Numpad1}{NumpadDown}{Numpad2}{NumpadPgdn}{Numpad3}{NumpadAdd}{NumpadEnter}{NumpadIns}{Numpad0}{NumpadDot}{NumpadDel}
         SendInput % sdot[key]
         break
     } else { 
-        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}}
+        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}{NumpadDiv}{NumpadMult}{NumpadSub}{NumpadHome}{Numpad7}{NumpadUp}{Numpad8}{NumpadPgup}{Numpad9}{NumpadLeft}{Numpad4}{NumpadClear}{Numpad5}{NumpadRight}{Numpad6}{NumpadEnd}{Numpad1}{NumpadDown}{Numpad2}{NumpadPgdn}{Numpad3}{NumpadAdd}{NumpadEnter}{NumpadIns}{Numpad0}{NumpadDot}{NumpadDel}
         SendInput % dot[key]
         break
     }
