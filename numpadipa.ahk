@@ -127,7 +127,7 @@ SetBatchLines, -1
             , 9: "⁹"
             , 0: "⁰"}
     smacron := {a: "Ā"
-            ,1: "Ǣ"
+            ,1: "Ǣ" 
             ,b: "B̄" ;
             ,c: "C̄" ;
             ,d: "D̄" ;
@@ -154,7 +154,7 @@ SetBatchLines, -1
             ,y: "Ȳ"
             ,z: "Z̄"} ;
     macron := {a: "ā"
-            ,1: "ǣ"
+            ,1: "ǣ" 
             ,b: "b̄" ;
             ,c: "c̄" ;
             ,d: "d̄" ;
@@ -272,7 +272,8 @@ SetBatchLines, -1
         ,w: "ẉ"
         ,x: "x̣" ;
         ,y: "ỵ"
-        ,z: "ẓ"}
+        ,z: "ẓ"
+        ,1: "æ̣"} ;
     sdot := {a: "Ạ"
         ,b: "Ḅ"
         ,c: "C̣" ;
@@ -298,7 +299,121 @@ SetBatchLines, -1
         ,w: "Ẉ"
         ,x: "X̣" ;
         ,y: "Ỵ"
-        ,z: "Ẓ"}
+        ,z: "Ẓ"
+        ,1: "Æ̣"} ;
+sub := {a: "ₐ"
+        ,e: "ₑ"
+        ,h: "ₕ"
+        ,i: "ᵢ"
+        ,j: "ⱼ"
+        ,k: "ₖ"
+        ,l: "ₗ"
+        ,m: "ₘ"
+        ,n: "ₙ"
+        ,o: "ₒ"
+        ,p: "ₚ"
+        ,r: "ᵣ"
+        ,s: "ₛ"
+        ,t: "ₜ"
+        ,u: "ᵤ"
+        ,v: "ᵥ"
+        ,x: "ₓ"
+        ,0: "₀"
+        ,1: "₁"
+        ,2: "₂"
+        ,3: "₃"
+        ,4: "₄"
+        ,5: "₅"
+        ,6: "₆"
+        ,7: "₇"
+        ,8: "₈"
+        ,9: "₉"
+        ,"=": "₊"
+        ,"-": "₋"
+        ,"[": "₍" 
+        ,"]": "₎"
+        ,"\": "₌"}
+super := {a: "ᵃ"
+        ,b: "ᵇ"
+        ,c: "ᶜ"
+        ,d: "ᵈ"
+        ,e: "ᵉ"
+        ,f: "ᶠ"
+        ,g: "ᵍ"
+        ,h: "ʰ"
+        ,i: "ⁱ"
+        ,j: "ʲ"
+        ,k: "ᵏ"
+        ,l: "ˡ"
+        ,m: "ᵐ"
+        ,n: "ⁿ"
+        ,o: "ᵒ"
+        ,p: "ᵖ"
+        ,r: "ʳ"
+        ,s: "ˢ"
+        ,t: "ᵗ"
+        ,u: "ᵘ"
+        ,v: "ᵛ"
+        ,w: "ʷ"
+        ,x: "ˣ"
+        ,y: "ʸ"
+        ,z: "ᶻ"
+        ,0: "⁰"
+        ,1: "¹"
+        ,2: "²"
+        ,3: "³"
+        ,4: "⁴"
+        ,5: "⁵"
+        ,6: "⁶"
+        ,7: "⁷"
+        ,8: "⁸"
+        ,9: "⁹"
+        ,"=": "⁺"
+        ,"-": "⁻"
+        ,"[": "⁽" 
+        ,"]": "⁾"
+        ,"\": "⁼"
+        ,"ɐ": "ᵄ"
+        ,"ɑ": "ᵅ"
+        ,"ɒ": "ᶛ"
+        ,"ɔ": "ᵓ"
+        ,"ɕ": "ᶝ"
+        ,"ð": "ᶞ"
+        ,"ə": "ᵊ"
+        ,"ɜ": "ᶟ"
+        ,"ɛ": "ᵋ"
+        ,"ɟ": "ᶡ"
+        ,"ɡ": "ᶢ"
+        ,"ɦ": "ʱ"
+        ,"ɥ": "ᶣ"
+        ,"ɨ": "ᶤ"
+        ,"ɪ": "ᶥ"
+        ,"ʝ": "ᶨ"
+        ,"ɭ": "ᶩ"
+        ,"ɱ": "ᶬ"
+        ,"ɯ": "ᵚ"
+        ,"ɰ": "ᶭ"
+        ,"ŋ": "ᵑ"
+        ,"ɲ": "ᶮ"
+        ,"ɳ": "ᶯ"
+        ,"ɵ": "ᶱ"
+        ,"œ": "ꟹ"
+        ,"ɹ": "ʴ"
+        ,"ɻ": "ʵ"
+        ,"ʁ": "ʶ"
+        ,"ʂ": "ᶳ"
+        ,"ʃ": "ᶴ"
+        ,"ʉ": "ᶶ"
+        ,"ʊ": "ᶷ"
+        ,"ʋ": "ᶹ"
+        ,"ʌ": "ᶺ"
+        ,"ɣ": "ˠ"
+        ,"ʐ": "ᶼ"
+        ,"ʑ": "ᶽ"
+        ,"ʒ": "ᶾ"
+        ,"ɸ": "ᶲ"
+        ,"ʔ": "ˀ"
+        ,"ʕ": "ˁ"}
 
 ; HOLDKEY
 ;   QWERTY
@@ -526,6 +641,71 @@ SetBatchLines, -1
     NumpadEnter & NumpadRight::Send ̤
     NumpadIns & NumpadRight::Send ̴
     
+    Shift & NumpadEnd::Send {Numpad1}
+    NumpadEnd::Send ̝
+    Numpad1::Send ˔
+    NumpadAdd & NumpadEnd::
+        loop
+        {
+        If GetKeyState("LShift", "P") {
+            SendInput ˕
+            break
+        } else { 
+            SendInput ̞
+            break
+        }
+        }
+        return
+    NumpadEnter & NumpadEnd::Send ̘
+    NumpadIns & NumpadEnd::Send ̙
+
+    Shift & NumpadDown::Send {Numpad2}
+    NumpadDown::Send ̪
+    Numpad2::Send ͆
+    NumpadAdd & NumpadDown::Send ̺
+    NumpadEnter & NumpadDown::Send ̻
+    NumpadIns & NumpadDown::Send ̚
+
+    Shift & NumpadPgdn::Send {Numpad3}
+    NumpadPgdn::Send ̜
+    Numpad3::Send ͑
+    NumpadAdd & NumpadPgdn::
+        loop
+        {
+        If GetKeyState("LShift", "P") {
+            SendInput ͗
+            break
+        } else { 
+            SendInput ̹
+            break
+        }
+        }
+        return
+    NumpadEnter & NumpadPgdn::
+        loop
+        {
+        If GetKeyState("LShift", "P") {
+            SendInput ˗
+            break
+        } else { 
+            SendInput ̱
+            break
+        }
+        }
+        return
+    NumpadIns & NumpadPgdn::
+        loop
+        {
+        If GetKeyState("LShift", "P") {
+            SendInput ˖
+            break
+        } else { 
+            SendInput ̟
+            break
+        }
+        }
+        return
+
 ; PRECOMPOSED 
     LShift & NumpadClear::Send {NumpadClear}
     LShift & NumpadEnter::Send {Help}
@@ -587,3 +767,13 @@ SetBatchLines, -1
     }
     }
     return
+
+; SUPERSUB
+    NumpadDiv::
+        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}{NumpadDiv}{NumpadMult}{NumpadSub}{NumpadHome}{Numpad7}{NumpadUp}{Numpad8}{NumpadPgup}{Numpad9}{NumpadLeft}{Numpad4}{NumpadClear}{Numpad5}{NumpadRight}{Numpad6}{NumpadEnd}{Numpad1}{NumpadDown}{Numpad2}{NumpadPgdn}{Numpad3}{NumpadAdd}{NumpadEnter}{NumpadIns}{Numpad0}{NumpadDot}{NumpadDel}
+        SendInput % super[key]
+        return
+    NumpadIns & NumpadDiv::
+        Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}{NumpadDiv}{NumpadMult}{NumpadSub}{NumpadHome}{Numpad7}{NumpadUp}{Numpad8}{NumpadPgup}{Numpad9}{NumpadLeft}{Numpad4}{NumpadClear}{Numpad5}{NumpadRight}{Numpad6}{NumpadEnd}{Numpad1}{NumpadDown}{Numpad2}{NumpadPgdn}{Numpad3}{NumpadAdd}{NumpadEnter}{NumpadIns}{Numpad0}{NumpadDot}{NumpadDel}
+        SendInput % sub[key]
+        return
