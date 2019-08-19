@@ -15,7 +15,7 @@ SetNumLockState, Off
             , d: "ɖ"
             , e: "ɛ"
             , f: "ʋ"
-            , g: "ɠ"
+            , g: "ɡ"
             , h: "ɦ"
             , i: "ɨ"
             , j: "ʎ"
@@ -52,7 +52,7 @@ SetNumLockState, Off
             , d: "ð"
             , e: "ə"
             , f: "ɸ"
-            , g: "ʛ"
+            , g: "ɢ"
             , h: "ħ"
             , i: "ɪ"
             , j: "ʝ"
@@ -86,11 +86,11 @@ SetNumLockState, Off
 
     alter := {a: "æ" ; currently unused
             , b: "ɓ"
-            , c: "→"
+            , c: "ʛ"
             , d: "ɗ"
             , e: "{ALTDOWN}{Numpad1}{Numpad5}{Numpad5}{ALTUP}"
             , f: "ɶ"
-            , g: "ɡ"
+            , g: "ɠ"
             , h: "ʜ"
             , i: "ɘ"
             , j: "ʟ"
@@ -99,9 +99,9 @@ SetNumLockState, Off
             , m: "ɱ"
             , n: "ɳ"
             , o: "ɵ"
-            , p: "∅"
+            , p: "ˈ"
             , q: "ɴ"
-            , r: "ʁ"
+            , r: "ɺ"
             , s: "ɕ"
             , t: "þ"
             , u: "ɯ"
@@ -424,7 +424,7 @@ SetNumLockState, Off
 
     NumpadAdd & c::Send ɟ
     NumpadEnter & c::Send ç
-    NumpadIns & c::Send ◌
+    NumpadIns & c::Send ʛ
 
     NumpadAdd & d::Send ɖ
     NumpadEnter & d::Send ð
@@ -438,9 +438,9 @@ SetNumLockState, Off
     NumpadEnter & f::Send ɸ
     NumpadIns & f::Send ɶ
 
-    NumpadAdd & g::Send ɠ
-    NumpadEnter & g::Send ʛ
-    NumpadIns & g::Send ɡ
+    NumpadAdd & g::Send ɡ
+    NumpadEnter & g::Send ɢ
+    NumpadIns & g::Send ɠ
 
     NumpadAdd & h::Send ɦ
     NumpadEnter & h::Send ħ
@@ -476,7 +476,7 @@ SetNumLockState, Off
 
     NumpadAdd & p::Send ɽ
     NumpadEnter & p::Send ɻ
-    NumpadIns & p::Send ∅
+    NumpadIns & p::Send ˈ
 
     NumpadAdd & q::Send ʀ
     NumpadEnter & q::Send ʁ
@@ -484,7 +484,7 @@ SetNumLockState, Off
 
     NumpadAdd & r::Send ɾ
     NumpadEnter & r::Send ɹ
-    NumpadIns & r::Send ʁ
+    NumpadIns & r::Send ɺ
 
     NumpadAdd & s::Send ʃ
     NumpadEnter & s::Send ʂ
