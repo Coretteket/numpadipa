@@ -45,7 +45,7 @@ Actually using these shortcuts is simple. If you want to type /ɐ/, simply press
 
 |-           |<kbd>Add</kbd>|<kbd>Enter</kbd>|<kbd>Ins</kbd>|
 |:----------:|:------------:|:--------------:|:------------:|
-|<kbd>a</kbd>|ɐ             |ɑ               |æ             |
+|<kbd>a</kbd>|`ɐ`           |ɑ               |æ             |
 |<kbd>b</kbd>|ʙ             |β               |ɓ             |
 |<kbd>c</kbd>|ɟ             |ç               |ʛ             |
 |<kbd>d</kbd>|ɖ             |ð               |ɗ             |
