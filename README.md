@@ -24,7 +24,11 @@ This meant my keyboard now had four layers, and I could use 26 keys of the alpha
 ## Installation
 
 ## Changelog
-
-## Future
+**v0.1 - Pre-release**
+- Most of the 122 characters in the IPA mapped
+- Diacritics, tonal markers and suprasegmental markers mapped
+- Precomposed macron, caron, ogonek, and dot below mapped
+- Unicode super- and subscript characters, including IPA, mapped
+- Features tons of bugs
 
 ~ *coretteket*
