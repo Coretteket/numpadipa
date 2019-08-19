@@ -23,7 +23,7 @@ This meant my keyboard now had four layers, and I could use 26 keys of the alpha
 
 ## Installation
 ...
-## Unicode
+### Unicode
 Once you have the layout installed and running, it is time to use it. Before you can, though, it is important to understand that not all programs and fonts support [Unicode](https://en.wikipedia.org/wiki/Unicode). If you are editing a file, make sure it is encoded in either UTF-8 or UTF-16, or you'll find your file all garbled up once you open it.
 
 As for fonts, you have to find a font that has all (or many) IPA characters supported. The creator of the font has to make a seperate glyph for each character in the IPA, and it therefore gets skipped often in smaller fonts. Many recommend the [Doulos](https://software.sil.org/doulos/) font by SIL International, however most main-stream fonts like Arial and Times New Roman support many IPA characters out of the box as well.
