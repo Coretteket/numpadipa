@@ -1,11 +1,6 @@
 # NumpadIPA
 > **numpadipa** /ˌnʊm.pəˈdaɪ.pə/ *n.* - a keyboard layout that uses the numpad keys, allowing the user to type the "entire" International Phonetic Alphabet.
 
-**Table of contents**
-1. [Introduction](#introduction)
-2. [Alternatives](#alternatives)
-3. [Concept](#concept)
-
 ## Introduction
 As an aspiring linguist and [conlanger](https://en.wikipedia.org/wiki/Constructed_language), I need to write [International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) (IPA) symbols quite often, when describing a language's phonology, or sound system. For a long time, I simply copy-pasted the symbols from the  Wikipedia page, but this quickly became too cumbersome. Thus, my search for keyboard layouts began.
 
@@ -19,10 +14,4 @@ Another keyboard, recommended and used by many, is the series of SIL keyboard la
 ### Concept
 Both these keyboards are good, but I felt I needed something better. Something that I could use to type in every program, but did not compromise on existing keys. This inspired me to create my own keyboard layout, and I quickly realized my keyboard had an entire sixteen-key section that I had never used before: the *numpad*.
 
-*~ coretteket*
-
-
-#### test
-- <kbd>Add</kbd><kbd>t</kbd>;
-- <kbd>Enter</kbd><kbd>t</kbd>;
-- <kbd>Ins</kbd><kbd>t</kbd>
+~ *coretteket*
