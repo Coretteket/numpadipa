@@ -17,8 +17,14 @@ Both these keyboards are good, but I felt I needed something better. Something t
 These sixteen keys would not be enough, on their own, though. The International Phonetic Alphabet is *extensive*. It features 112 symbols for vowels and consonants, 86 of which are not a simple "a" to "z", and another 54 diacritics and other symbols for a total of 166 characters. Furthermore, I wanted some other special characters to be easily available, such as thorn (þ), and subscript numbers for the Proto-Indo-European's series of laryngeals (\*h₁, \*h₂, and \*h₃), among other things. 
 
 ### Implementation
-The answer was simple: modifier keys. These are keys that, when pressed and held essentially enable another "layer" of the keyboard. I quickly decided on three modifiers: <kbd>Num Add</kbd>, <kbd>Num Enter</kbd> and <kbd>Num Ins</kbd>, which are the three larger keys on [most numpad sections](https://github.com/Coretteket/numpadipa/blob/master/img/numpadexample.png?raw=true). 
+The answer was simple: [modifier keys](https://en.wikipedia.org/wiki/Modifier_key). These are keys that, when pressed and held essentially enable another "layer" of the keyboard. I quickly decided on three modifiers: <kbd>Num Add</kbd>, <kbd>Num Enter</kbd> and <kbd>Num Ins</kbd>, which are the three larger keys on [most numpad sections](https://github.com/Coretteket/numpadipa/blob/master/img/numpadexample.png?raw=true). 
 
 This meant my keyboard now had four layers, and I could use 26 keys of the alphanumeric section of the keyboard to create *<sup>(26\*3=)</sup>* 78 new keys, almost enough to fit in the consonants and vowels. For the rest of the symbols required, I used the 0-9 keys of the alphanumeric section, leaving them the same in the primary layer, and 13 remaining keys of the numpad sections to create *<sup>(10\*3+13\*4=)</sup>* 82 new keys. For a total of 160 keys, more than I needed initially.
+
+## Installation
+
+## Changelog
+
+## Future
 
 ~ *coretteket*
