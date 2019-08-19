@@ -12,6 +12,10 @@ Another keyboard, recommended and used by many, is the series of SIL keyboard la
 > [IPA Unicode Keyboards](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=UniIPAKeyboard) - SIL International
 
 ### Concept
-Both these keyboards are good, but I felt I needed something better. Something that I could use to type in every program, but did not compromise on existing keys. This inspired me to create my own keyboard layout, and I quickly realized my keyboard had an entire sixteen-key section that I had never used before: the *numpad*.
+Both these keyboards are good, but I felt I needed something better. Something that I could use to type in every program, but did not compromise on existing keys. This inspired me to create my own keyboard layout, and I quickly realized my keyboard had an entire sixteen-key section that I had never used before: the *numpad*. Keys, all duplicates of other keys already on my regular keyboard.
+
+These sixteen keys would not be enough, on their own, though. The International Phonetic Alphabet is *extensive*. It features 112 symbols for vowels and consonants, 86 of which are not a simple "a" to "z", and another 54 diacritics and other symbols for a total of 166 characters. Furthermore, I wanted some other special characters to be easily available, such as thorn (þ), and subscript numbers for the Proto-Indo-European's series of laryngeals (\*h₁, \*h₂, and \*h₃), among other things. 
+
+The answer was simple: modifier keys. These are keys that, when pressed and held essentially enable another "layer" of the keyboard. I quickly decided on three modifiers: <kbd>Num Add</kbd>, <kbd>Num Enter</kbd> and <kbd>Num Ins</kbd>, which are the three larger keys on most numpad sections.
 
 ~ *coretteket*
