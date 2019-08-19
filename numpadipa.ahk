@@ -1,21 +1,15 @@
 ﻿; NUMPADIPA /ˌnʊm.pəˈdaɪ.pə/
-;   An IPA keyboard layout that makes use of the numpad and three new deadkeys to type the 'entire' IPA.
-;
-; KNOWN BUGS
-;   "ø" is not supported natively for some reason; alt-code used
-;   Numpad keys do not support the three deadkeys, need to be held
-;   Combo is Shift + Numpad8 + vowel instead of natural Numpad8 + Shift + vowel
-;   Numlock might be useless, go to Control Panel > Accesibility > Mouse... and turn it off
-;   Caps ogonek sends "Help" key to avoid hitting Enter
+;   An IPA keyboard layout that makes use of the numpad and three new modifier keys to type the 'entire' IPA.
+;   For more information, go to github.com/Coretteket/numpadipa.
 
 #SingleInstance, force
 SetKeyDelay -1
 Process, Priority, , High
 SetBatchLines, -1
-;SetNumLockState, Off
+SetNumLockState, Off
 
 ; DEADKEY
-    fort := { a: "ɐ"
+    fort := {a: "ɐ"  ; currently unused
             , b: "ʙ"
             , c: "ɟ"
             , d: "ɖ"
@@ -52,7 +46,7 @@ SetBatchLines, -1
             , 9: "᷈"
             , 0: "ꜛ"}
 
-    len := {  a: "ɑ"
+    len := {a: "ɑ"   ; currently unused
             , b: "β"
             , c: "ç"
             , d: "ð"
@@ -90,7 +84,7 @@ SetBatchLines, -1
             , 0: "ꜜ"}
 
 
-    alter := { a: "æ"
+    alter := {a: "æ" ; currently unused
             , b: "ɓ"
             , c: "→"
             , d: "ɗ"
@@ -301,7 +295,7 @@ SetBatchLines, -1
         ,y: "Ỵ"
         ,z: "Ẓ"
         ,1: "Æ̣"} ;
-sub := {a: "ₐ"
+    sub := {a: "ₐ"
         ,e: "ₑ"
         ,h: "ₕ"
         ,i: "ᵢ"
@@ -333,7 +327,7 @@ sub := {a: "ₐ"
         ,"[": "₍" 
         ,"]": "₎"
         ,"\": "₌"}
-super := {a: "ᵃ"
+    super := {a: "ᵃ"
         ,b: "ᵇ"
         ,c: "ᶜ"
         ,d: "ᵈ"
@@ -415,7 +409,7 @@ super := {a: "ᵃ"
         ,"ʔ": "ˀ"
         ,"ʕ": "ˁ"}
 
-; HOLDKEY
+; MODIFIER
 ;   QWERTY
     NumpadAdd & a::Send ɐ
     NumpadEnter & a::Send ɑ
