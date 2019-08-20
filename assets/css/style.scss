@@ -4,12 +4,12 @@
 @import "{{ site.theme }}";
 
 @font-face {
-    font-family: 'libertinus';
-    src: url('/Libertinus.ttf') format('TrueType');
+    font-family: 'Libertinus';
+    src: url('../../Libertinus.ttf') format('TrueType');
     font-weight: normal;
     font-style: normal;
 }
 
 .markdown-body {
-    font-family: 'libertinus';
+    font-family: 'Libertinus' !important;
 }
