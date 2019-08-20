@@ -1,7 +1,8 @@
 /* kbd style by auth0 on Github - https://auth0.github.io/kbd */
 
 html {
-    font-family: Libertinus Serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Serif', serif;
     padding: 0px 500px;
 }
 
