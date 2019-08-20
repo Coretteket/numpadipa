@@ -1,0 +1,18 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+@font-face {
+    font-family: 'Libertinus';
+    src: url('../Libertinus.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Libertinus' !important;
+}
