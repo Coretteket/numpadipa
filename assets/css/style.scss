@@ -36,7 +36,7 @@ a:visited {
 a:active,
 a:hover {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 /* CSS Button Hover by Karlo Videk */
@@ -53,8 +53,8 @@ $black-05: rgba(0, 0, 0, 0.05);
 
 .button-container a {
   text-decoration: none;
-  font-weight: bold;
-  font-family: 'Libertinus';
+  font-weight: 500;
+  font-family: 'Noto Sans';
   color: $grey;
 }
 
