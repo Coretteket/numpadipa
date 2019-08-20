@@ -2,6 +2,15 @@
 ---
 
 @import "{{ site.theme }}";
-html {
-    background-color: rebeccapurple;
+
+@font-face {
+    font-family: 'libertinus_sansregular';
+    src: url('libertinussans-regular-webfont.woff2') format('woff2'),
+         url('libertinussans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.markdown-body {
+    font-family: 'libertinus_sansregular'
 }
