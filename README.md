@@ -138,7 +138,7 @@ Some might find it easier to learn this keyboard layout from the perspective of 
 ## Contact
 
 ## Changelog
-**v0.1 - Pre-release**
+**v0.1-alpha / Pre-release**
 - Most of the 122 characters in the IPA mapped
 - Diacritics, tonal markers and suprasegmental markers mapped
 - Precomposed macron, caron, ogonek, and dot below mapped
