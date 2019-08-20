@@ -36,7 +36,7 @@ body {
 }
 
 table {
-    font-family: "Libertinus Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     margin-left:auto; 
     margin-right:auto;
 }
@@ -107,6 +107,7 @@ blockquote {
     margin: 1.5em 30px;
     padding: 0.3em 20px;
     font-style: italic;
+    font-size: 1vm;
 }
 
 blockquote p {
