@@ -20,21 +20,9 @@
     font-style: normal;
 }
 
-@media screen and (orientation:portrait) {
-    html {
-        margin: 0% 2%; 
-        width: 100%;
-    }
+html {
+    margin: 1em 4em;
 }
-
-@media screen and (orientation:landscape) {
-    html {
-        margin-left: 25%; 
-        margin-right: 25%;
-        max-width: 50%;
-    }
-}
-
 
 body {
     font-family: 'Noto Sans', sans-serif;
