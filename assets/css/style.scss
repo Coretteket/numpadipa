@@ -36,14 +36,10 @@ $slide:all 0.5s 0.1s cubic-bezier(0.55,0,0.1,1);
 //COLORS
 $grey: #4f4f4f;
 $white: #ffffff;
-$green: #39bda7;
+$green: #4f4f4f;
 $transparent: rgba(255, 255, 255, 0);
 $black-05: rgba(0, 0, 0, 0.05);
 
-body {
-  background: url('http://thecodeplayer.com/uploads/media/geometry.png');
-  font-family: 'Ubuntu', sans-serif;
-}
 a {
   text-decoration: none;
   color: $grey;
