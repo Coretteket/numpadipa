@@ -3,7 +3,11 @@
 @font-face {
     font-family: 'Libertinus Sans';
     src: url('libertinussans-regular-webfont.woff2') format('woff2'),
-         url('libertinussans-regular-webfont.woff') format('woff');
+         url('libertinussans-regular-webfont.woff') format('woff'),
+         url('libertinussans-bold-webfont.woff2') format('woff2'),
+         url('libertinussans-bold-webfont.woff') format('woff'),
+         url('libertinussans-italic-webfont.woff2') format('woff2'),
+         url('libertinussans-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -16,9 +20,34 @@
     font-style: normal;
 }
 
-html {
+@media only screen and (max-width: 400px) {
+    body {
+        margin-left:auto; 
+        margin-right:auto;
+        max-width: 98%;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        margin-left:auto; 
+        margin-right:auto;
+        max-width: 60%;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    body {
+        margin-left:auto; 
+        margin-right:auto;
+        max-width: 40%;
+    }
+}
+
+body {
     font-family: 'Noto Sans', sans-serif;
-    padding: 20px 500px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .h {
@@ -27,8 +56,13 @@ html {
 }
 
 table {
+    font-family: "Libertinus Sans", sans-serif;
     margin-left:auto; 
     margin-right:auto;
+}
+
+td {
+    padding: 3px 5px;
 }
 
 kbd {
@@ -42,23 +76,23 @@ kbd {
     vertical-align: text-bottom;
     background: #eee;
     font-weight: 500;
-    color: #555;
+    color: #444;
     cursor: pointer;
     /* font-variant: small-caps; */
     /* font-weight: 600; */
 
     /* This two work */
-    /* letter-spacing: 0.5px; */
-    letter-spacing: 1px;
+    letter-spacing: 0.5px; 
+    /* letter-spacing: 1px;*/
 
 
-    /* Prevent selection */
+    /* Prevent selection 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    user-select: none;*/
 }
   
 kbd:hover, kbd:hover * {
@@ -92,6 +126,7 @@ blockquote {
     border-left: 4px solid #ccc;
     margin: 1.5em 30px;
     padding: 0.3em 20px;
+    font-style: italic;
 }
 
 blockquote p {
