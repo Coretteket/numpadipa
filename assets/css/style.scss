@@ -28,6 +28,8 @@ kbd {
     color: rgb(15, 15, 15)
 }
 
+/* CSS Button Hover by Karlo Videk */
+
 //FONT IMPORT
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:700&subset=latin,latin-ext);
 //HOVER TRANSITION
@@ -47,7 +49,7 @@ a {
 
 //ELEMENTS
 .button-container {
-  padding: 10px 0;
+  padding: 0px 0px;
   text-align: center;
 }
 
@@ -59,7 +61,8 @@ a {
   transition: $hover;
   position: relative;
   overflow: hidden;
-  
+  margin: 0px 10px;
+
   &:before {
     content: "";
     position: absolute;
