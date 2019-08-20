@@ -1,13 +1,28 @@
 /* kbd style by auth0 on Github - https://auth0.github.io/kbd */
 
+@font-face {
+    font-family: 'Libertinus Mono';
+    src: url('libertinusmono-regular-webfont.woff2') format('woff2'),
+         url('libertinusmono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libertinus Sans';
+    src: url('libertinussans-regular-webfont.woff2') format('woff2'),
+         url('libertinussans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
-    font-family: 'Noto Sans', sans-serif;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Libertinus Sans', sans-serif;
     padding: 0px 500px;
 }
 
 kbd {
-    font-family: Libertinus Mono, "Lucida Console", monospace;
+    font-family: "Libertinus Mono", monospace;
     display: inline-block;
     border-radius: 3px;
     padding: 0px 4px;
