@@ -1,0 +1,568 @@
+<h1 id="numpadipa">NumpadIPA</h1>
+<blockquote>
+<p><strong>numpadipa</strong> /ˌnʊm.pəˈdaɪ.pə/ <em>n.</em> - a keyboard layout that uses the numpad keys, allowing the user to type the &quot;entire&quot; International Phonetic Alphabet.</p>
+</blockquote>
+<h2 id="introduction">Introduction</h2>
+<p>As an aspiring linguist and <a href="https://en.wikipedia.org/wiki/Constructed_language">conlanger</a>, I need to write <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">International Phonetic Alphabet</a> (IPA) symbols quite often, when describing a language&#39;s phonology, or sound system. For a long time, I simply copy-pasted the symbols from the  Wikipedia page, but this quickly became too cumbersome. Thus, my search for keyboard layouts began.</p>
+<h3 id="alternatives">Alternatives</h3>
+<p>First, I stumbled across the TypeIt keyboard, which is a website that has point-and-click support for many different languages, including a large portion of the IPA. It has some shortcuts as well, to allow for easier typing. Still, though, you have to type in the website&#39;s box instead of the program you want to actually have the text in.</p>
+<blockquote>
+<p><a href="https://ipa.typeit.org/full/">TypeIt IPA</a> - Tomasz P. Szynalski</p>
+</blockquote>
+<p>Another keyboard, recommended and used by many, is the series of SIL keyboard layouts. These are real, installable keyboard layouts that make use of key sequences to produce many IPA characters. For example (depending on which keyboard you choose), <kbd>t</kbd><kbd>=</kbd> produces <kbd>θ</kbd>. However, it overrides keys I want to be able to use normally as well, like <kbd>:</kbd> and <kbd>$</kbd>. This means I constantly had to switch keyboard layouts while using this.</p>
+<blockquote>
+<p><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=UniIPAKeyboard">IPA Unicode Keyboards</a> - SIL International</p>
+</blockquote>
+<h3 id="concept">Concept</h3>
+<p>Both these keyboards are good, but I felt I needed something better. Something that I could use to type in every program, but did not compromise on existing keys. This inspired me to create my own keyboard layout, and I quickly realized my keyboard had an entire sixteen-key section that I had never used before: the <em>numpad</em>. Keys, all duplicates of other keys already on my regular keyboard.</p>
+<p>These sixteen keys would not be enough, on their own, though. The International Phonetic Alphabet is <em>extensive</em>. It features 112 symbols for vowels and consonants, 86 of which are not a simple &quot;a&quot; to &quot;z&quot;, and another 54 diacritics and other symbols for a total of 166 characters. Furthermore, I wanted some other special characters to be easily available, such as thorn (þ), and subscript numbers for the Proto-Indo-European&#39;s series of laryngeals (*h₁, *h₂, and *h₃), among other things. </p>
+<h3 id="implementation">Implementation</h3>
+<p>The answer was simple: <a href="https://en.wikipedia.org/wiki/Modifier_key">modifier keys</a>. These are keys that, when pressed and held essentially enable another &quot;layer&quot; of the keyboard. I quickly decided on three modifiers: <kbd>Num Add</kbd>, <kbd>Num Enter</kbd> and <kbd>Num Ins</kbd>, which are the three larger keys on <a href="https://github.com/Coretteket/numpadipa/blob/master/img/numpadexample.png?raw=true">most numpad sections</a>. </p>
+<p>This meant my keyboard now had four layers, and I could use 26 keys of the alphanumeric section of the keyboard to create <em><sup>(26\</em>3=)</sup><em> 78 new keys, almost enough to fit in the consonants and vowels. For the rest of the symbols required, I used the 0-9 keys of the alphanumeric section, leaving them the same in the primary layer, and 13 remaining keys of the numpad sections to create </em><sup>(10*3+13*4=)</sup>* 82 new keys. For a total of 160 keys, it was more than I needed initially.</p>
+<h2 id="installation">Installation</h2>
+<p>...</p>
+<h3 id="unicode">Unicode</h3>
+<p>Once you have the layout installed and running, it is time to use it. Before you can, though, it is important to understand that not all programs and fonts support <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a>. If you are editing a file, make sure it is encoded in either UTF-8 or UTF-16, or you&#39;ll find your file all garbled up once you open it.</p>
+<p>As for fonts, you have to find a font that has all (or many) IPA characters supported. The creator of the font has to make a seperate glyph for each character in the IPA, and it therefore gets skipped often in smaller fonts. Many recommend the <a href="https://software.sil.org/doulos/">Doulos</a> font by SIL International, however most main-stream fonts like Arial and Times New Roman support many IPA characters out of the box as well.</p>
+<p>For use in LaTeX, the package <a href="https://www.ctan.org/pkg/tipa">tipa</a> is recommended by the International Phonetic Association. However, when using XeLaTeX, the font can simply be changed to one supporting IPA characters using <a href="https://www.ctan.org/pkg/fontspec">fontspec</a>.</p>
+<h2 id="usage">Usage</h2>
+<blockquote>
+<p>There are a <em>lot</em> of shortcuts to learn. Get over it.</p>
+</blockquote>
+<h3 id="definitions">Definitions</h3>
+<p>As has been said, NumpadIPA makes use of your numpad. Three keys in particular are of real importance. These are <kbd>Num Add</kbd>, <kbd>Num Enter</kbd>, and <kbd>Num Ins</kbd>, which are used as <em>modifier keys</em>. You hold these keys and then press another to produce a character from the International Phonetic Alphabet.</p>
+<p>I have tried to create <em>some form</em> of logic behind all this, but your perception of logic might differ, and sometimes it was simply impossible to create a logical shortcut. That being said, the <kbd>Num Add</kbd> key (abbreviated <kbd>Add</kbd>) is used, generally, for fortition of the original glyph; the <kbd>Num Enter</kbd> key (abbreviated <kbd>Ent</kbd>) is used for lenition; and the <kbd>Num Ins</kbd> key (abbreviated <kbd>Ins</kbd>) is used for an alternate version of the original glyph, but this definition should be taken very lightly.</p>
+<h3 id="qwerty">Qwerty</h3>
+<p>The following is a comprehensive list of all the glyphs that can be produced by simply pressing one of the three modifier keys. Some more glyphs can be created using the A-Z section of your keyboard, but those will be introduced further down the document. Note: if some or all characters below are not displaying, you do not have a IPA-compatible font on your device. Please consult <a href="https://github.com/Coretteket/numpadipa/wiki/Installation#unicode">this page</a>.</p>
+<p>Actually using these shortcuts is simple. If you want to type /ɐ/, simply press and hold <kbd>Add</kbd> and then press <kbd>a</kbd> before releasing <kbd>Add</kbd> again. This is comparable to how you would use the <kbd>Shift</kbd> and <kbd>Control</kbd> buttons.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">-</th>
+<th style="text-align:center"><kbd>Add</kbd></th>
+<th style="text-align:center"><kbd>Enter</kbd></th>
+<th style="text-align:center"><kbd>Ins</kbd></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><kbd>a</kbd></td>
+<td style="text-align:center">ɐ</td>
+<td style="text-align:center">ɑ</td>
+<td style="text-align:center">æ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>b</kbd></td>
+<td style="text-align:center">ʙ</td>
+<td style="text-align:center">β</td>
+<td style="text-align:center">ɓ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>c</kbd></td>
+<td style="text-align:center">ɟ</td>
+<td style="text-align:center">ç</td>
+<td style="text-align:center">ʛ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>d</kbd></td>
+<td style="text-align:center">ɖ</td>
+<td style="text-align:center">ð</td>
+<td style="text-align:center">ɗ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>e</kbd></td>
+<td style="text-align:center">ɛ</td>
+<td style="text-align:center">ə</td>
+<td style="text-align:center">ø</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>f</kbd></td>
+<td style="text-align:center">ʋ</td>
+<td style="text-align:center">ɸ</td>
+<td style="text-align:center">ɶ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>g</kbd></td>
+<td style="text-align:center">ɡ</td>
+<td style="text-align:center">ɢ</td>
+<td style="text-align:center">ɠ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>h</kbd></td>
+<td style="text-align:center">ɦ</td>
+<td style="text-align:center">ħ</td>
+<td style="text-align:center">ʜ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>i</kbd></td>
+<td style="text-align:center">ɨ</td>
+<td style="text-align:center">ɪ</td>
+<td style="text-align:center">ɘ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>j</kbd></td>
+<td style="text-align:center">ʎ</td>
+<td style="text-align:center">ʝ</td>
+<td style="text-align:center">ʟ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>k</kbd></td>
+<td style="text-align:center">ʔ</td>
+<td style="text-align:center">ʡ</td>
+<td style="text-align:center">ʢ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>l</kbd></td>
+<td style="text-align:center">ɬ</td>
+<td style="text-align:center">ɮ</td>
+<td style="text-align:center">ɭ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>m</kbd></td>
+<td style="text-align:center">ɜ</td>
+<td style="text-align:center">ɞ</td>
+<td style="text-align:center">ɱ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>n</kbd></td>
+<td style="text-align:center">ŋ</td>
+<td style="text-align:center">ɲ</td>
+<td style="text-align:center">ɳ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>o</kbd></td>
+<td style="text-align:center">ɒ</td>
+<td style="text-align:center">ɔ</td>
+<td style="text-align:center">ɵ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>p</kbd></td>
+<td style="text-align:center">ɽ</td>
+<td style="text-align:center">ɻ</td>
+<td style="text-align:center">ˈ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>q</kbd></td>
+<td style="text-align:center">ʀ</td>
+<td style="text-align:center">ʁ</td>
+<td style="text-align:center">ɴ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>r</kbd></td>
+<td style="text-align:center">ɾ</td>
+<td style="text-align:center">ɹ</td>
+<td style="text-align:center">ɺ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>s</kbd></td>
+<td style="text-align:center">ʃ</td>
+<td style="text-align:center">ʂ</td>
+<td style="text-align:center">ɕ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>t</kbd></td>
+<td style="text-align:center">ʈ</td>
+<td style="text-align:center">θ</td>
+<td style="text-align:center">þ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>u</kbd></td>
+<td style="text-align:center">ʉ</td>
+<td style="text-align:center">ʊ</td>
+<td style="text-align:center">ɯ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>v</kbd></td>
+<td style="text-align:center">ⱱ</td>
+<td style="text-align:center">ɥ</td>
+<td style="text-align:center">ʌ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>w</kbd></td>
+<td style="text-align:center">ɰ</td>
+<td style="text-align:center">ʍ</td>
+<td style="text-align:center">ɧ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>x</kbd></td>
+<td style="text-align:center">ɣ</td>
+<td style="text-align:center">χ</td>
+<td style="text-align:center">ʕ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>y</kbd></td>
+<td style="text-align:center">œ</td>
+<td style="text-align:center">ʏ</td>
+<td style="text-align:center">ɤ</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>z</kbd></td>
+<td style="text-align:center">ʒ</td>
+<td style="text-align:center">ʐ</td>
+<td style="text-align:center">ʑ</td>
+</tr>
+</tbody>
+</table>
+<h4 id="vowels">Vowels</h4>
+<p>You&#39;ll notice the vowels are not nicely spread out over all IPA vowels, namely: <kbd>a</kbd>, <kbd>e</kbd>, <kbd>i</kbd>, <kbd>o</kbd>, <kbd>u</kbd>, and <kbd>y</kbd>. This is because these six keys combined with the four layers do not provide enough vowels. <em><sup>(6\</em>4 = 24 &lt; 28)</sup>* Therefore, the four vowels /ɶ ʌ ɜ ɞ/ are spread out over <kbd>Ins</kbd><kbd>f</kbd>, <kbd>Ins</kbd><kbd>v</kbd>, <kbd>Add</kbd><kbd>m</kbd>, and <kbd>Ent</kbd><kbd>m</kbd> respectively.</p>
+<h4 id="other">Other</h4>
+<p>There are some certainly some oddities. Things like /ʛ/ being <kbd>Ins</kbd><kbd>c</kbd>, although unrelated to /c/. Some characters, like /ɧ/, were just to odd to fit in any spot logical, so <kbd>Ins</kbd><kbd>w</kbd> it is. Other than those oddities, one &quot;special&quot; glyph is added. This is <kbd>Ins</kbd><kbd>p</kbd>, one of the shortcuts for the stress marking character /ˈ/ - the other being <kbd>Num Mult</kbd> as explained in the numpad section.</p>
+<h4 id="missed">Missed</h4>
+<p>I am currently not aware of any IPA characters, other than outdated and extended ones, that are not included in this keyboard layout. The (unofficial) capital characters have not been added, although it is on my to-do list. Please <a href="https://github.com/Coretteket/numpadipa/wiki/Contact">reach out to me</a>, if I have missed something and you want it added.</p>
+<h3 id="numpad">Numpad</h3>
+<p>When referring to <kbd>Dot</kbd>, the Numpad key <kbd>Num Del</kbd> otherwise known as <kbd>Num Dot</kbd> is meant, not the actual <kbd>.</kbd> key.</p>
+<p>The dental and alveolar click were not added seperately as I deem them too similar to undergo the hassle of finding a logical system to fit them in. Might be added in a far future.</p>
+<h3 id="overview">Overview</h3>
+<p>Some might find it easier to learn this keyboard layout from the perspective of the actual phonetic charts. These tables below are an attempt to help with that. The actual symbols are not listed, as these can be easily found <a href="https://upload.wikimedia.org/wikipedia/commons/8/8e/IPA_chart_2018.pdf">elsewhere</a> and would only complicate these tables. Voiceless and voiced consonants, and rounded and unrounded vowels are put in separate columns.</p>
+<h4 id="pulmonic-consonants">Pulmonic consonants</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">Bilab.</th>
+<th style="text-align:center">Labio.</th>
+<th style="text-align:center">Dental</th>
+<th style="text-align:center">Alveo.</th>
+<th style="text-align:center">Postal.</th>
+<th style="text-align:center">Retrof.</th>
+<th style="text-align:center">Palat.</th>
+<th style="text-align:center">Velar</th>
+<th style="text-align:center">Uvular</th>
+<th style="text-align:center">Pharyn.</th>
+<th style="text-align:center">Glottal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plosive</strong></td>
+<td style="text-align:center"><kbd>p</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>t</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>t</kbd></td>
+<td style="text-align:center"><kbd>c</kbd></td>
+<td style="text-align:center"><kbd>k</kbd></td>
+<td style="text-align:center"><kbd>q</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>k</kbd></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center"><kbd>b</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>d</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>d</kbd></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>c</kbd></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>g</kbd></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>g</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td><strong>Nasal</strong></td>
+<td style="text-align:center"><kbd>m</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>m</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>n</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>n</kbd></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>n</kbd></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>n</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>q</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td><strong>Trill</strong></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>b</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>r</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>q</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td><strong>Tap</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>v</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>r</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>p</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td><strong>Fricative</strong></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>f</kbd></td>
+<td style="text-align:center"><kbd>f</kbd></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>t</kbd></td>
+<td style="text-align:center"><kbd>s</kbd></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>s</kbd></td>
+<td style="text-align:center"><kbd>Len</kbd><kbd>s</kbd></td>
+<td style="text-align:center"><kbd>Len</kbd><kbd>c</kbd></td>
+<td style="text-align:center"><kbd>x</kbd></td>
+<td style="text-align:center"><kbd>Len</kbd><kbd>x</kbd></td>
+<td style="text-align:center"><kbd>Len</kbd><kbd>h</kbd></td>
+<td style="text-align:center"><kbd>h</kbd></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>v</kbd></td>
+<td style="text-align:center"><kbd>v</kbd></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>d</kbd></td>
+<td style="text-align:center"><kbd>z</kbd></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>z</kbd></td>
+<td style="text-align:center"><kbd>Len</kbd><kbd>z</kbd></td>
+<td style="text-align:center"><kbd>Len</kbd><kbd>j</kbd></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>x</kbd></td>
+<td style="text-align:center"><kbd>Len</kbd><kbd>q</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>x</kbd></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>h</kbd></td>
+</tr>
+<tr>
+<td><strong>Lat. Fric.</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>l</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>l</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td><strong>Approxim.</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>f</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>r</kbd></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>p</kbd></td>
+<td style="text-align:center"><kbd>j</kbd></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>w</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td><strong>Lat. Appr.</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>l</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>l</kbd></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>j</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>j</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="non-pulmonic-consonants">Non-pulmonic consonants</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:center">Clicks</th>
+<th style="text-align:center">Implosives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Bilabial</strong></td>
+<td style="text-align:center"><kbd>Dot</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>b</kbd></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Dental</strong></td>
+<td style="text-align:center">(<kbd>\</td>
+<td style="text-align:center"></kbd>)</td>
+<td><kbd>Ins</kbd><kbd>d</kbd></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>(Post)alveolar</strong></td>
+<td style="text-align:center">(<kbd>!</kbd>)</td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>Dot</kbd></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Palatoalveolar</strong></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>Dot</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>g</kbd></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Alveolar lat.</strong></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>Dot</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>c</kbd></td>
+</tr>
+</tbody>
+</table>
+<h4 id="other-consonants">Other consonants</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ʍ</td>
+<td><kbd>Ent</kbd><kbd>w</kbd></td>
+</tr>
+<tr>
+<td>w</td>
+<td><kbd>w</kbd></td>
+</tr>
+<tr>
+<td>ɥ</td>
+<td><kbd>Ent</kbd><kbd>v</kbd></td>
+</tr>
+<tr>
+<td>ʜ</td>
+<td><kbd>Ins</kbd><kbd>h</kbd></td>
+</tr>
+<tr>
+<td>ʢ</td>
+<td><kbd>Ins</kbd><kbd>k</kbd></td>
+</tr>
+<tr>
+<td>ʡ</td>
+<td><kbd>Ent</kbd><kbd>k</kbd></td>
+</tr>
+<tr>
+<td>ɕ</td>
+<td><kbd>Ins</kbd><kbd>s</kbd></td>
+</tr>
+<tr>
+<td>ʑ</td>
+<td><kbd>Ins</kbd><kbd>z</kbd></td>
+</tr>
+<tr>
+<td>ɺ</td>
+<td><kbd>Ins</kbd><kbd>r</kbd></td>
+</tr>
+<tr>
+<td>ɧ</td>
+<td><kbd>Ins</kbd><kbd>w</kbd></td>
+</tr>
+</tbody>
+</table>
+<h4 id="vowels">Vowels</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center">Front</th>
+<th style="text-align:center"></th>
+<th style="text-align:center">Central</th>
+<th style="text-align:center"></th>
+<th style="text-align:center">Back</th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Close</strong></td>
+<td style="text-align:center"><kbd>i</kbd></td>
+<td style="text-align:center"><kbd>y</kbd></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>i</kbd></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>u</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>u</kbd></td>
+<td style="text-align:center"><kbd>u</kbd></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>i</kbd></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>y</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>u</kbd></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>e</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>e</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>i</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>o</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>y</kbd></td>
+<td style="text-align:center"><kbd>o</kbd></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Mid</strong></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>e</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>e</kbd></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>y</kbd></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>m</kbd></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>m</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>v</kbd></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>o</kbd></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>a</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>a</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>Open</strong></td>
+<td style="text-align:center"><kbd>a</kbd></td>
+<td style="text-align:center"><kbd>Ins</kbd><kbd>f</kbd></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><kbd>Ent</kbd><kbd>a</kbd></td>
+<td style="text-align:center"><kbd>Add</kbd><kbd>o</kbd></td>
+</tr>
+</tbody>
+</table>
+<h2 id="contact">Contact</h2>
+<h2 id="changelog">Changelog</h2>
+<p><strong>v0.1 - Pre-release</strong></p>
+<ul>
+<li>Most of the 122 characters in the IPA mapped</li>
+<li>Diacritics, tonal markers and suprasegmental markers mapped</li>
+<li>Precomposed macron, caron, ogonek, and dot below mapped</li>
+<li>Unicode super- and subscript characters, including IPA, mapped</li>
+<li>Features tons of bugs</li>
+</ul>
