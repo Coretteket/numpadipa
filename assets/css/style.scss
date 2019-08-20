@@ -36,7 +36,7 @@ a:visited {
 a:active,
 a:hover {
     text-decoration: none;
-    text-decoration: bold;
+    font-weight: bold;
 }
 
 /* CSS Button Hover by Karlo Videk */
@@ -55,6 +55,7 @@ $black-05: rgba(0, 0, 0, 0.05);
 
 .button-container a {
   text-decoration: none;
+  font-weight: bold;
   color: $grey;
 }
 
