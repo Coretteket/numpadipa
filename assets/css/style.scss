@@ -32,9 +32,11 @@ kbd {
     color: rgb(15, 15, 15)
 }
 
-a,
+a {
+    color: #D18A19;   
+}
 a:visited {
-    color: #D18A19;
+    color: #27292E;
 }
 
 a:active,
@@ -59,22 +61,6 @@ $black-05: rgba(0, 0, 0, 0.05);
 .button-container {
   padding: 0px 0px;
   text-align: center;
-}
-
-.button-format a:visited,
-.button-format a {
-  text-decoration: none;
-  font-weight: 500;
-  font-family: 'Noto Sans';
-  color: $grey;
-}
-
-.button-format a:hover,
-.button-format a:active {
-  text-decoration: none;
-  font-weight: 500;
-  font-family: 'Noto Sans';
-  color: $white;
 }
 
 .button {
