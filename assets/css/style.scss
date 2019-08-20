@@ -55,21 +55,20 @@ $green: #D18A19;
 $transparent: rgba(255, 255, 255, 0);
 $black-05: rgba(0, 0, 0, 0.05);
 
-.button a {
-
-}
-
 //ELEMENTS
 .button-container {
   padding: 0px 0px;
   text-align: center;
 }
 
-.button {
+.button a {
   text-decoration: none;
   font-weight: 500;
   font-family: 'Noto Sans';
   color: $grey;
+}
+
+.button {
   display: inline-block;
   padding: 12px 24px;
   border: 1px solid $grey;
