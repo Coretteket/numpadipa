@@ -1,3 +1,4 @@
-url: "https://coretteket.github.io"
-name: NumpadIPA
-theme: primer
+theme: jekyll-theme-primer
+
+plugins:
+  - jekyll-seo-tag
