@@ -32,11 +32,9 @@ kbd {
     color: rgb(15, 15, 15)
 }
 
-a {
-    color: #D18A19;   
-}
+a,
 a:visited {
-    color: #27292E;
+    color: #D18A19;   
 }
 
 a:active,
@@ -81,7 +79,7 @@ $black-05: rgba(0, 0, 0, 0.05);
     top: 100%;
     width: 140%;
     height: 180%;
-    background-color: $black-05;
+    background-color: $grey;
     border-radius: 50%;
     display: block;
     transition: $slide;
