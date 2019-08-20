@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>NumpadIPA</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56329412-5"></script>
@@ -15,17 +15,17 @@
     </script>
 
     <!-- Noto Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i|Noto+Serif:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap&subset=latin-ext" rel="stylesheet">
 
 </head>
 <body>
-    <h1 id="numpadipa">NumpadIPA</h1>
+    <h1 class="h" id="numpadipa">NumpadIPA</h1>
     <blockquote>
         <p><strong>numpadipa</strong> /ˌnʊm.pəˈdaɪ.pə/ <em>n.</em> - a keyboard layout that uses the numpad keys, allowing the user to type the &quot;entire&quot; International Phonetic Alphabet.</p>
     </blockquote>
-    <h2 id="introduction">Introduction</h2>
+    <h2 class="h" id="introduction">Introduction</h2>
         <p>As an aspiring linguist and <a href="https://en.wikipedia.org/wiki/Constructed_language">conlanger</a>, I need to write <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">International Phonetic Alphabet</a> (IPA) symbols quite often, when describing a language&#39;s phonology, or sound system. For a long time, I simply copy-pasted the symbols from the  Wikipedia page, but this quickly became too cumbersome. Thus, my search for keyboard layouts began.</p>
-        <h3 id="alternatives">Alternatives</h3>
+        <h3 class="h" id="alternatives">Alternatives</h3>
         <p>First, I stumbled across the TypeIt keyboard, which is a website that has point-and-click support for many different languages, including a large portion of the IPA. It has some shortcuts as well, to allow for easier typing. Still, though, you have to type in the website&#39;s box instead of the program you want to actually have the text in.</p>
         <blockquote>
         <p><a href="https://ipa.typeit.org/full/">TypeIt IPA</a> - Tomasz P. Szynalski</p>
@@ -34,26 +34,26 @@
         <blockquote>
         <p><a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=UniIPAKeyboard">IPA Unicode Keyboards</a> - SIL International</p>
         </blockquote>
-        <h3 id="concept">Concept</h3>
+        <h3 class="h" id="concept">Concept</h3>
         <p>Both these keyboards are good, but I felt I needed something better. Something that I could use to type in every program, but did not compromise on existing keys. This inspired me to create my own keyboard layout, and I quickly realized my keyboard had an entire sixteen-key section that I had never used before: the <em>numpad</em>. Keys, all duplicates of other keys already on my regular keyboard.</p>
         <p>These sixteen keys would not be enough, on their own, though. The International Phonetic Alphabet is <em>extensive</em>. It features 112 symbols for vowels and consonants, 86 of which are not a simple &quot;a&quot; to &quot;z&quot;, and another 54 diacritics and other symbols for a total of 166 characters. Furthermore, I wanted some other special characters to be easily available, such as thorn (þ), and subscript numbers for the Proto-Indo-European&#39;s series of laryngeals (*h₁, *h₂, and *h₃), among other things. </p>
-        <h3 id="implementation">Implementation</h3>
+        <h3 class="h" id="implementation">Implementation</h3>
         <p>The answer was simple: <a href="https://en.wikipedia.org/wiki/Modifier_key">modifier keys</a>. These are keys that, when pressed and held essentially enable another &quot;layer&quot; of the keyboard. I quickly decided on three modifiers: <kbd>Num Add</kbd>, <kbd>Num Enter</kbd> and <kbd>Num Ins</kbd>, which are the three larger keys on <a href="https://github.com/Coretteket/numpadipa/blob/master/img/numpadexample.png?raw=true">most numpad sections</a>. </p>
         <p>This meant my keyboard now had four layers, and I could use 26 keys of the alphanumeric section of the keyboard to create <em><sup>(26\</em>3=)</sup><em> 78 new keys, almost enough to fit in the consonants and vowels. For the rest of the symbols required, I used the 0-9 keys of the alphanumeric section, leaving them the same in the primary layer, and 13 remaining keys of the numpad sections to create </em><sup>(10*3+13*4=)</sup>* 82 new keys. For a total of 160 keys, it was more than I needed initially.</p>
-        <h2 id="installation">Installation</h2>
+        <h2 class="h" id="installation">Installation</h2>
         <p>...</p>
-        <h3 id="unicode">Unicode</h3>
+        <h3 class="h" id="unicode">Unicode</h3>
         <p>Once you have the layout installed and running, it is time to use it. Before you can, though, it is important to understand that not all programs and fonts support <a href="https://en.wikipedia.org/wiki/Unicode">Unicode</a>. If you are editing a file, make sure it is encoded in either UTF-8 or UTF-16, or you&#39;ll find your file all garbled up once you open it.</p>
         <p>As for fonts, you have to find a font that has all (or many) IPA characters supported. The creator of the font has to make a seperate glyph for each character in the IPA, and it therefore gets skipped often in smaller fonts. Many recommend the <a href="https://software.sil.org/doulos/">Doulos</a> font by SIL International, however most main-stream fonts like Arial and Times New Roman support many IPA characters out of the box as well.</p>
         <p>For use in LaTeX, the package <a href="https://www.ctan.org/pkg/tipa">tipa</a> is recommended by the International Phonetic Association. However, when using XeLaTeX, the font can simply be changed to one supporting IPA characters using <a href="https://www.ctan.org/pkg/fontspec">fontspec</a>.</p>
-    <h2 id="usage">Usage</h2>
+    <h2 class="h" id="usage">Usage</h2>
         <blockquote>
         <p>There are a <em>lot</em> of shortcuts to learn. Get over it.</p>
         </blockquote>
-        <h3 id="definitions">Definitions</h3>
+        <h3 class="h" id="definitions">Definitions</h3>
         <p>As has been said, NumpadIPA makes use of your numpad. Three keys in particular are of real importance. These are <kbd>Num Add</kbd>, <kbd>Num Enter</kbd>, and <kbd>Num Ins</kbd>, which are used as <em>modifier keys</em>. You hold these keys and then press another to produce a character from the International Phonetic Alphabet.</p>
         <p>I have tried to create <em>some form</em> of logic behind all this, but your perception of logic might differ, and sometimes it was simply impossible to create a logical shortcut. That being said, the <kbd>Num Add</kbd> key (abbreviated <kbd>Add</kbd>) is used, generally, for fortition of the original glyph; the <kbd>Num Enter</kbd> key (abbreviated <kbd>Ent</kbd>) is used for lenition; and the <kbd>Num Ins</kbd> key (abbreviated <kbd>Ins</kbd>) is used for an alternate version of the original glyph, but this definition should be taken very lightly.</p>
-        <h3 id="qwerty">Qwerty</h3>
+        <h3 class="h" id="qwerty">Qwerty</h3>
         <p>The following is a comprehensive list of all the glyphs that can be produced by simply pressing one of the three modifier keys. Some more glyphs can be created using the A-Z section of your keyboard, but those will be introduced further down the document. Note: if some or all characters below are not displaying, you do not have a IPA-compatible font on your device. Please consult <a href="https://github.com/Coretteket/numpadipa/wiki/Installation#unicode">this page</a>.</p>
         <p>Actually using these shortcuts is simple. If you want to type /ɐ/, simply press and hold <kbd>Add</kbd> and then press <kbd>a</kbd> before releasing <kbd>Add</kbd> again. This is comparable to how you would use the <kbd>Shift</kbd> and <kbd>Control</kbd> buttons.</p>
         <table>
@@ -224,18 +224,18 @@
         </tr>
         </tbody>
         </table>
-        <h4 id="vowels">Vowels</h4>
+        <h4 class="h" id="vowels">Vowels</h4>
         <p>You&#39;ll notice the vowels are not nicely spread out over all IPA vowels, namely: <kbd>a</kbd>, <kbd>e</kbd>, <kbd>i</kbd>, <kbd>o</kbd>, <kbd>u</kbd>, and <kbd>y</kbd>. This is because these six keys combined with the four layers do not provide enough vowels. <em><sup>(6\</em>4 = 24 &lt; 28)</sup>* Therefore, the four vowels /ɶ ʌ ɜ ɞ/ are spread out over <kbd>Ins</kbd><kbd>f</kbd>, <kbd>Ins</kbd><kbd>v</kbd>, <kbd>Add</kbd><kbd>m</kbd>, and <kbd>Ent</kbd><kbd>m</kbd> respectively.</p>
-        <h4 id="other">Other</h4>
+        <h4 class="h" id="other">Other</h4>
         <p>There are some certainly some oddities. Things like /ʛ/ being <kbd>Ins</kbd><kbd>c</kbd>, although unrelated to /c/. Some characters, like /ɧ/, were just to odd to fit in any spot logical, so <kbd>Ins</kbd><kbd>w</kbd> it is. Other than those oddities, one &quot;special&quot; glyph is added. This is <kbd>Ins</kbd><kbd>p</kbd>, one of the shortcuts for the stress marking character /ˈ/ - the other being <kbd>Num Mult</kbd> as explained in the numpad section.</p>
-        <h4 id="missed">Missed</h4>
+        <h4 class="h" id="missed">Missed</h4>
         <p>I am currently not aware of any IPA characters, other than outdated and extended ones, that are not included in this keyboard layout. The (unofficial) capital characters have not been added, although it is on my to-do list. Please <a href="https://github.com/Coretteket/numpadipa/wiki/Contact">reach out to me</a>, if I have missed something and you want it added.</p>
-        <h3 id="numpad">Numpad</h3>
+        <h3 class="h" id="numpad">Numpad</h3>
         <p>When referring to <kbd>Dot</kbd>, the Numpad key <kbd>Num Del</kbd> otherwise known as <kbd>Num Dot</kbd> is meant, not the actual <kbd>.</kbd> key.</p>
         <p>The dental and alveolar click were not added seperately as I deem them too similar to undergo the hassle of finding a logical system to fit them in. Might be added in a far future.</p>
-        <h3 id="overview">Overview</h3>
+        <h3 class="h" id="overview">Overview</h3>
         <p>Some might find it easier to learn this keyboard layout from the perspective of the actual phonetic charts. These tables below are an attempt to help with that. The actual symbols are not listed, as these can be easily found <a href="https://upload.wikimedia.org/wikipedia/commons/8/8e/IPA_chart_2018.pdf">elsewhere</a> and would only complicate these tables. Voiceless and voiced consonants, and rounded and unrounded vowels are put in separate columns.</p>
-        <h4 id="pulmonic-consonants">Pulmonic consonants</h4>
+        <h4 class="h" id="pulmonic-consonants">Pulmonic consonants</h4>
         <table>
         <thead>
         <tr>
@@ -409,7 +409,7 @@
         </tr>
         </tbody>
         </table>
-        <h4 id="non-pulmonic-consonants">Non-pulmonic consonants</h4>
+        <h4 class="h" id="non-pulmonic-consonants">Non-pulmonic consonants</h4>
         <table>
         <thead>
         <tr>
@@ -447,7 +447,7 @@
         </tr>
         </tbody>
         </table>
-        <h4 id="other-consonants">Other consonants</h4>
+        <h4 class="h" id="other-consonants">Other consonants</h4>
         <table>
         <thead>
         <tr>
@@ -498,7 +498,7 @@
         </tr>
         </tbody>
         </table>
-        <h4 id="vowels">Vowels</h4>
+        <h4 class="h" id="vowels">Vowels</h4>
         <table>
         <thead>
         <tr>
@@ -577,8 +577,8 @@
         </tr>
         </tbody>
         </table>
-    <h2 id="contact">Contact</h2>
-    <h2 id="changelog">Changelog</h2>
+    <h2 class="h" id="contact">Contact</h2>
+    <h2 class="h" id="changelog">Changelog</h2>
         <p><strong>v0.1 - Pre-release</strong></p>
         <ul>
             <li>Most of the 122 characters in the IPA mapped</li>

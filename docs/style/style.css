@@ -1,14 +1,6 @@
 /* kbd style by auth0 on Github - https://auth0.github.io/kbd */
 
 @font-face {
-    font-family: 'Libertinus Mono';
-    src: url('libertinusmono-regular-webfont.woff2') format('woff2'),
-         url('libertinusmono-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Libertinus Sans';
     src: url('libertinussans-regular-webfont.woff2') format('woff2'),
          url('libertinussans-regular-webfont.woff') format('woff');
@@ -16,9 +8,27 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Libertinus Mono';
+    src: url('libertinussans-mono-webfont.woff2') format('woff2'),
+         url('libertinussans-mono-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
-    font-family: 'Libertinus Sans', sans-serif;
-    padding: 0px 500px;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 20px 500px;
+}
+
+.h {
+    margin-top: 40px;
+    font-family: "Libertinus Sans", sans-serif;
+}
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
 }
 
 kbd {
@@ -35,7 +45,7 @@ kbd {
     color: #555;
     cursor: pointer;
     /* font-variant: small-caps; */
-    font-weight: 600;
+    /* font-weight: 600; */
 
     /* This two work */
     /* letter-spacing: 0.5px; */
@@ -77,29 +87,13 @@ kbd:active kbd {
     background: none;
 }
 
-/* Deep blue */
-kbd.deep-blue, .deep-blue kbd {
-    background: steelblue;
-    color: #eee;
+blockquote {
+    /* background: #f9f9f9; */
+    border-left: 4px solid #ccc;
+    margin: 1.5em 30px;
+    padding: 0.3em 20px;
 }
 
-kbd.deep-blue:hover, kbd.deep-blue:hover *, .deep-blue kbd:hover {
-    color: white;
-}
-
-/* Dark apple */
-kbd.dark-apple, .dark-apple kbd {
-    background: black;
-    color: #ddd;
-}
-
-kbd.dark-apple:hover, kbd.dark-apple:hover *, .dark-apple kbd:hover {
-    color: white;
-}
-
-/* Type writer */
-kbd.type-writer, .type-writer kbd {
-    border-radius: 10px;
-    background: #333;
-    color: white;
+blockquote p {
+    display: inline;
 }
