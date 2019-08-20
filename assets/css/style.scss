@@ -55,7 +55,7 @@ $green: #D18A19;
 $transparent: rgba(255, 255, 255, 0);
 $black-05: rgba(0, 0, 0, 0.05);
 
-.button-container a {
+.button a {
   text-decoration: none;
   font-weight: 500;
   font-family: 'Noto Sans';
@@ -63,7 +63,7 @@ $black-05: rgba(0, 0, 0, 0.05);
 }
 
 //ELEMENTS
-.button {
+.button-container {
   padding: 0px 0px;
   text-align: center;
 }
