@@ -1,5 +1,9 @@
 /* kbd style by auth0 on Github - https://auth0.github.io/kbd */
 
+html {
+    font-family: Libertinus Sans;
+}
+
 kbd {
     font-family: Libertinus Mono, "Lucida Console", monospace;
     display: inline-block;
