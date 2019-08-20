@@ -20,11 +20,8 @@
     font-style: normal;
 }
 
-html {
-    margin: 1em 4em;
-}
-
 body {
+    overflow: hidden;
     font-family: 'Noto Sans', sans-serif;
     text-align: justify;
     text-justify: inter-word;
