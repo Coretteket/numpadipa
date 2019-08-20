@@ -4,12 +4,12 @@
 @import "{{ site.theme }}";
 
 @font-face {
-    font-family: 'libertinus_sansregular';
-    src: url('../numpadipa/LibertinusSans-Regular.ttf') format('ttf');
+    font-family: 'libertinus';
+    src: url('.../Libertinus.ttf') format('TrueType');
     font-weight: normal;
     font-style: normal;
 }
 
 .markdown-body {
-    font-family: 'libertinus_sansregular'
+    font-family: 'libertinus';
 }
