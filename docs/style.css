@@ -1,5 +1,7 @@
+/* kbd style by auth0 on Github - https://auth0.github.io/kbd */
+
 kbd {
-    font-family: Consolas, "Lucida Console", monospace;
+    font-family: Libertinus Mono, "Lucida Console", monospace;
     display: inline-block;
     border-radius: 3px;
     padding: 0px 4px;
@@ -11,7 +13,7 @@ kbd {
     font-weight: 500;
     color: #555;
     cursor: pointer;
-    font-variant: small-caps;
+    /* font-variant: small-caps; */
     font-weight: 600;
 
     /* This two work */
