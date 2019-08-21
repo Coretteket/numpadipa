@@ -46,28 +46,8 @@ a:hover {
 
 /* kbd by auth0 on Github. */
 
+.markdown kbd,
 kbd {
-  font-family: monospace;
-  display: inline-block;
-  border-radius: 3px;
-  padding: 0px 2px;
-  box-shadow: 1px 1px 1px #777;
-  margin: 1px 1px 1px 2px;
-  line-height: 1;
-  font-size: small;
-  vertical-align: text-bottom;
-  background: #eee;
-  font-weight: 500;
-  color: #444;
-  cursor: pointer;
-  /* font-variant: small-caps; */
-  /* font-weight: 600; */
-
-  /* This two work */
-  letter-spacing: 0.5px; 
-  /* letter-spacing: 1px;*/
-
-
   /* Prevent selection */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
