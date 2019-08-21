@@ -572,7 +572,7 @@ SetNumLockState, Off
     NumpadSub::Send ‿
     NumpadAdd & NumpadSub::Send ‖
     NumpadEnter & NumpadSub::Send |
-    NumpadIns & NumpadSub::Send .
+    NumpadIns & NumpadSub::Send ◌
 
     NumpadHome::Send ː
     NumpadAdd & NumpadHome::Send ːː
