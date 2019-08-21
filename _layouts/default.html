@@ -94,7 +94,7 @@
       </ul>
       <h3>Downloading</h3>
       <p>Downloading NumpadIPA is easy, and quick. Click on the button below, and you'll be redirected to the release page on Github. Find the latest release, which should be at the top, or any other version if you want. Press <i>"Click here to download {version-number}."</i>, and the download will start automatically. Once downloaded, double click the .exe file to start the layout, and you should see an æ-symbol appear in your system tray, the bottom right of your screen. You now have NumpadIPA installed and running.</p>
-      <a href="https://github.com/Coretteket/numpadipa/releases" class="button" onClick="ga('event', 'Download', { 'event_category': 'Installation'});">Download</a>
+      <a href="https://github.com/Coretteket/numpadipa/releases" class="button" onClick="ga('event', 'download', { 'event_category': 'button'});">Download</a>
       <h3 id="startup">Startup</h3>
       <p>To activate the keyboard layout automatically, every time you start your computer, you need to add it to the Windows startup folder. Right click on your NumpadIPA executable and select "Create shortcut". Drag and drop the newly created shortcut file into the startup folder, and it will be executed every time you restart your PC. On Windows 10 the folder is located here:</p>
       <blockquote>
@@ -827,24 +827,6 @@
         <li>Unicode super- and subscript characters, including IPA, mapped</li>
         <li>Features tons of bugs</li>
       </ul>
-
-      <!-- Sharing buttons -->
-      <a href="http://twitter.com/share?url=coretteket.github.io/numpadipa" target="_blank" class="btn share-btn twitter">
-        <i class="fa fa-twitter"></i>
-      </a>
-      <a href="http://www.facebook.com/sharer/sharer.php?u=coretteket.github.io/numpadipa" target="_blank" class="btn share-btn facebook">
-          <i class="fa fa-facebook"></i>
-      </a>
-      <a href="http://reddit.com/submit?url=coretteket.github.io/numpadipa" target="_blank" class="btn share-btn reddit">
-          <i class="fa fa-reddit"></i>
-      </a>
-      <a href="http://www.linkedin.com/shareArticle?url=coretteket.github.io/numpadipa" target="_blank" class="btn share-btn linkedin">
-          <i class="fa fa-linkedin"></i>
-      </a>
-      <a href="mailto:?body=coretteket.github.io/numpadipa" target="_blank" class="btn share-btn email">
-          <i class="fa fa-envelope"></i>
-      </a>
-
 
       {% if site.github.private != true and site.github.license %}
       <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
