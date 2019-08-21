@@ -50,9 +50,10 @@ kbd {
   font-family: monospace;
   display: inline-block;
   border-radius: 3px;
-  padding: 0px 3px;
+  padding: 0px 2px;
   box-shadow: 1px 1px 1px #777;
-  margin: 2px;
+  margin: 1px 1.5px 1.5px 2px;
+  line-height: 1;
   font-size: small;
   vertical-align: text-bottom;
   background: #eee;
@@ -67,13 +68,13 @@ kbd {
   /* letter-spacing: 1px;*/
 
 
-  /* Prevent selection 
+  /* Prevent selection */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;*/
+  user-select: none;
 }
 
 kbd:hover, kbd:hover * {
