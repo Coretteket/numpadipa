@@ -15,9 +15,6 @@
       gtag('config', 'UA-56329412-6');
     </script>
 
-    <!-- Font Awesome -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
-
     <!-- Meta tags. -->
     <meta name="description" content="An IPA keyboard layout that makes use of the numpad section of any keyboard to type the entire International Phonetic Alphabet. Using only three new modifier keys, anyone can easily type IPA characters. It's free to use, and open source, meaning that anyone can contribute and make it better.">
 
@@ -60,7 +57,7 @@
         </a>
       </div>
       <h2 id="introduction">Introduction</h2>
-      <a href="coretteket.github.io/coretteket">NumpadIPA</a> is a keyboard layout, that makes use of the least used portion of your keyboard - the <i>numpad</i> - allowing you to type characters from the <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">International Phonetic Alphabet</a> (IPA). The International Phonetic Alphabet is used by many linguists and speech therapists to write not how a word is supposed to be written, but how it is to be pronounced with phonetic transcription. Using three keys from your numpad as modifier keys, you can easily type one of many glyphs as defined in the IPA.
+      <p><a href="coretteket.github.io/coretteket">NumpadIPA</a> is a keyboard layout, that makes use of the least used portion of your keyboard - the <i>numpad</i> - allowing you to type characters from the <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">International Phonetic Alphabet</a> (IPA). The International Phonetic Alphabet is used by many linguists and speech therapists to write not how a word is supposed to be written, but how it is to be pronounced with phonetic transcription. Using three keys from your numpad as modifier keys, you can easily type one of many glyphs as defined in the IPA, without constantly needing to switch between keyboard layouts, as it doesn't interfere with your normal keyboard set-up.</p>
       <h3 id="inspiration">Inspiration</h2>
       <p>As an aspiring linguist and <a href="https://en.wikipedia.org/wiki/Constructed_language">conlanger</a>, I need to write IPA symbols quite often, when describing a language’s phonology, or sound system. For a long time, I simply copy-pasted the symbols from the  Wikipedia page, but this quickly became too cumbersome. Thus, my search for keyboard layouts began.</p>
 
@@ -408,6 +405,10 @@
         </tr>
       </table>
 
+      <h4 id="other">Other</h4>
+      <p>You might have noticed two keys missing here, namely <kbd>Num Div</kbd>, which looks like <kbd>/</kbd> on your numpad, and <kbd>Num 5</kbd>, sometimes also called <kbd>Num Clear</kbd>. These both have different functions compared to the rest, and function as <a href="https://en.wikipedia.org/wiki/Dead_key">dead keys</a>, instead of regular modifier keys. This means that you press <i>and release</i> the keys before pressing another.</p>
+      <p>The <kbd>Num Div</kbd> key has two functions, on it's own it produces superscript numbers and letters. This supports numbers zero to nine, the Latin alphabet and most IPA characters. This can be used for aspiration and labialization, ie. /pʰ/ and /tʷ/. To type IPA superscript characters, first type <kbd>Num Div</kbd> and then the combination for the character, ie. <kbd>Num Div</kbd> & <kbd>Add</kbd><kbd>h</kbd> to produce /ʱ/. Combined to make <kbd>Num Ins</kbd><kbd>Num Div</kbd> it produces subscript numbers and letters, this has way less supported characters. These limatations are due to Unicode, not the keyboard layout. For a list of supported super and subscript characters, see <a href="https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts">this Wikipedia page.</a></p>
+      <p>The <kbd>Num 5</kbd> key can be combined with all three modifiers, to produce <a href="https://en.wikipedia.org/wiki/Precomposed_character">precomposed characters</a>. Without a modifier, it produces a character with a macron (similar to <kbd>Add</kbd><kbd>3</kbd>). Combined with <kbd>Num Add</kbd>, it produces a character with a caron (similar to <kbd>Shift</kbd><kbd>Ins</kbd><kbd>Num 9</kbd>). Combined with <kbd>Num Enter</kbd>, it produces a character with an ogonek, ie. "ą". Combined with <kbd>Num Ins</kbd>, it produces a character with an underdot, ie. "ụ". All of the precomposed characters can also be typed in uppercase if you hold shift, ie <kbd>Shift</kbd><kbd>Add</kbd><kbd>Num 5</kbd> & <kbd>c</kbd> produces "Č". These all serve mainly for conlangers who might use these diacritics, in precomposed characters, for romanizations or orthographies.</p>
       <h3 id="overview">Overview</h3>
       <p>Some might find it easier to learn this keyboard layout from the perspective of the actual phonetic charts. These tables below are an attempt to help with that. The actual symbols are not listed, as these can be easily found <a href="https://upload.wikimedia.org/wikipedia/commons/8/8e/IPA_chart_2018.pdf">elsewhere</a> and would only complicate these tables. Voiceless and voiced consonants, and rounded and unrounded vowels are put in separate columns.</p>
 
