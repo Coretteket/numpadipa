@@ -15,6 +15,9 @@
       gtag('config', 'UA-56329412-6');
     </script>
 
+    <!-- Font Awesome -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+
     <!-- Meta tags. -->
     <meta name="description" content="An IPA keyboard layout that makes use of the numpad section of any keyboard to type the entire International Phonetic Alphabet. Using only three new modifier keys, anyone can easily type IPA characters. It's free to use, and open source, meaning that anyone can contribute and make it better.">
 
@@ -825,9 +828,29 @@
         <li>Features tons of bugs</li>
       </ul>
 
+      <!-- Sharing buttons -->
+      <a href="http://twitter.com/share?url=coretteket.github.io/numpadipa" target="_blank" class="btn share-btn twitter">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="http://www.facebook.com/sharer/sharer.php?u=coretteket.github.io/numpadipa" target="_blank" class="btn share-btn facebook">
+          <i class="fa fa-facebook"></i>
+      </a>
+      <a href="http://reddit.com/submit?url=coretteket.github.io/numpadipa" target="_blank" class="btn share-btn reddit">
+          <i class="fa fa-reddit"></i>
+      </a>
+      <a href="http://www.linkedin.com/shareArticle?url=coretteket.github.io/numpadipa" target="_blank" class="btn share-btn linkedin">
+          <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="mailto:?body=coretteket.github.io/numpadipa" target="_blank" class="btn share-btn email">
+          <i class="fa fa-envelope"></i>
+      </a>
+
+
+      {% if site.github.private != true and site.github.license %}
       <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
-        Share on <a href="https://twitter.com/share?url=https://coretteket.github.io/numpadipa/" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer/sharer.php?u=https://coretteket.github.io/numpadipa/" target="_blank">Facebook</a>, <a href="https://reddit.com/submit?url=https://coretteket.github.io/numpadipa/" target="_blank">Reddit</a>, <a href="https://www.linkedin.com/shareArticle?urlhttps://coretteket.github.io/numpadipa/" target="_blank">LinkedIn</a>, <a href="http://www.tumblr.com/share/link?url=https://coretteket.github.io/numpadipa/" target="_blank">Tumblr</a> <a href="mailto:?subject=NumpadIPA&body=https://coretteket.github.io/numpadipa/" target="_blank">Email</a>.
+        This site is open source. {% github_edit_link "Improve this page" %}.
       </div>
+      {% endif %}
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
