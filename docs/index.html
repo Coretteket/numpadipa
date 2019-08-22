@@ -22,17 +22,18 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
 
+
   <!-- Meta tags. -->
   <meta name="description" content="An IPA keyboard layout that makes use of the numpad section of any keyboard to type the entire International Phonetic Alphabet. Using only three new modifier keys, anyone can easily type IPA characters. It's free to use, and open source, meaning that anyone can contribute and make it better.">
 
   <meta property="og:title" content="NumpadIPA">
   <meta property="og:description" content="An IPA keyboard layout that makes use of the numpad section of any keyboard to type the entire International Phonetic Alphabet. Using only three new modifier keys, anyone can easily type IPA characters. It's free to use, and open source, meaning that anyone can contribute and make it better.">
-  <meta property="og:image" content="https://github.com/Coretteket/numpadipa/blob/master/docs/img/numpadipa.png?raw=true">
+  <meta property="og:image" content="https://github.com/Coretteket/numpadipa/blob/master/img/numpadipa.png?raw=true">
   <meta property="og:url" content="https://coretteket.github.io/numpadipa">
 
   <meta name="twitter:title" content="NumpadIPA ">
   <meta name="twitter:description" content="An IPA keyboard layout that makes use of the numpad section of any keyboard to type the entire International Phonetic Alphabet. Using only three new modifier keys, anyone can easily type IPA glyphs.">
-  <meta name="twitter:image" content="https://github.com/Coretteket/numpadipa/blob/master/docs/img/numpadipa.png?raw=true">
+  <meta name="twitter:image" content="https://github.com/Coretteket/numpadipa/blob/master/img/numpadipa.png?raw=true">
   <meta name="twitter:card" content="summary_large_image">
 
   <meta property="og:site_name" content="NumpadIPA">
@@ -40,7 +41,7 @@
 
   <meta name="robots" content="index, follow">
   <link href="URL" rel="canonical">
-  <link rel="shortcut icon" type="image/png" href="https://github.com/Coretteket/numpadipa/raw/master/docs/img/numpadico.png"/>
+  <link rel="shortcut icon" type="image/png" href="https://github.com/Coretteket/numpadipa/raw/master/img/numpadico.png"/>
   <title>NumpadIPA</title>
 </head>
 <body>
@@ -61,7 +62,7 @@
       </a>
     </div>
     <h2 id="introduction">Introduction</h2>
-    <p><a href="coretteket.github.io/coretteket">NumpadIPA</a> is a keyboard layout, that makes use of the least used portion of your keyboard - the <i>numpad</i> - allowing you to type characters from the <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">International Phonetic Alphabet</a> (IPA). The International Phonetic Alphabet is used by many linguists and speech therapists to write not how a word is supposed to be written, but how it is to be pronounced with phonetic transcription. Using three keys from your numpad as modifier keys, you can easily type one of many glyphs as defined in the IPA, without constantly needing to switch between keyboard layouts, as it doesn't interfere with your normal keyboard set-up.</p>
+    <p><a href="coretteket.github.io/coretteket">NumpadIPA</a> is a keyboard layout, that makes use of the least used portion of your keyboard - the <em>numpad</em> - allowing you to type characters from the <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet">International Phonetic Alphabet</a> (IPA). The International Phonetic Alphabet is used by many linguists and speech therapists to write not how a word is supposed to be written, but how it is to be pronounced with phonetic transcription. Using three keys from your numpad as modifier keys, you can easily type one of many glyphs as defined in the IPA, without constantly needing to switch between keyboard layouts, as it doesn't interfere with your normal keyboard set-up.</p>
     <h3 id="inspiration">Inspiration</h2>
     <p>As an aspiring linguist and <a href="https://en.wikipedia.org/wiki/Constructed_language">conlanger</a>, I need to write IPA symbols quite often, when describing a language’s phonology, or sound system. For a long time, I simply copy-pasted the symbols from the  Wikipedia page, but this quickly became too cumbersome. Thus, my search for keyboard layouts began.</p>
 
@@ -82,7 +83,7 @@
     <p>These sixteen keys would not be enough, on their own, though. The International Phonetic Alphabet is <em>extensive</em>. It features 112 symbols for vowels and consonants, 86 of which are not a simple “a” to “z”, and another 54 diacritics and other symbols for a total of 166 characters. Furthermore, I wanted some other special characters to be easily available, such as thorn (þ), and subscript numbers for the Proto-Indo-European’s series of laryngeals (*h₁, *h₂, and *h₃), among other things.</p>
 
     <h3 id="implementation">Implementation</h3>
-    <p>The answer was simple: <a href="https://en.wikipedia.org/wiki/Modifier_key">modifier keys</a>. These are keys that, when pressed and held essentially enable another “layer” of the keyboard. I quickly decided on three modifiers: <kbd>Num Add</kbd>, <kbd>Num Enter</kbd> and <kbd>Num Ins</kbd>, which are the three larger keys on <a href="https://github.com/Coretteket/numpadipa/blob/master/docs/img/numpadexample.png?raw=true">most numpad sections</a>.</p>
+    <p>The answer was simple: <a href="https://en.wikipedia.org/wiki/Modifier_key">modifier keys</a>. These are keys that, when pressed and held essentially enable another “layer” of the keyboard. I quickly decided on three modifiers: <kbd>Num Add</kbd>, <kbd>Num Enter</kbd> and <kbd>Num Ins</kbd>, which are the three larger keys on <a href="https://github.com/Coretteket/numpadipa/blob/master/img/numpadexample.png?raw=true">most numpad sections</a>.</p>
 
     <p>This meant my keyboard now had four layers, and I could use 26 keys of the alphanumeric section of the keyboard to create <em><sup>(26*3=)</sup></em> 78 new keys, almost enough to fit in the consonants and vowels. For the rest of the symbols required, I used the 0-9 keys of the alphanumeric section, leaving them the same in the primary layer, and 13 remaining keys of the numpad sections to create <em><sup>(10*3+13*4=)</sup></em> 82 new keys. For a total of 160 keys, it was more than I needed initially.</p>
 
@@ -94,7 +95,7 @@
       <li>An internet connection, which you already have seeing as you loaded this website.</li>
     </ul>
     <h3>Downloading</h3>
-    <p>Downloading NumpadIPA is easy, and quick. Click on the button below, and you'll be redirected to the release page on Github. Find the latest release, which should be at the top, or any other version if you want. Press <i>"Click here to download {version-number}."</i>, and the download will start automatically. Once downloaded, double click the .exe file to start the layout, and you should see an æ-symbol appear in your system tray, the bottom right of your screen. You now have NumpadIPA installed and running.</p>
+    <p>Downloading NumpadIPA is easy, and quick. Click on the button below, and you'll be redirected to the release page on Github. Find the latest release, which should be at the top, or any other version if you want. Press <em>"Click here to download {version-number}."</em>, and the download will start automatically. Once downloaded, double click the .exe file to start the layout, and you should see an æ-symbol appear in your system tray, the bottom right of your screen. You now have NumpadIPA installed and running.</p>
     <a href="https://github.com/Coretteket/numpadipa/releases" class="button" onClick="ga('event', 'download', { 'event_category': 'button'});">Download</a>
     <h3 id="startup">Startup</h3>
     <p>To activate the keyboard layout automatically, every time you start your computer, you need to add it to the Windows startup folder. Right click on your NumpadIPA executable and select "Create shortcut". Drag and drop the newly created shortcut file into the startup folder, and it will be executed every time you restart your PC. On Windows 10 the folder is located here:</p>
@@ -109,6 +110,11 @@
     <p>For use in LaTeX, the package <a href="https://www.ctan.org/pkg/tipa">tipa</a> is recommended by the International Phonetic Association. However, when using XeLaTeX, the font can simply be changed to one supporting IPA characters using <a href="https://www.ctan.org/pkg/fontspec">fontspec</a>.</p>
 
     <h2 id="usage">Usage</h2>
+    <blockquote>
+      <p>There are a <em>lot</em> of shortcuts to learn. Get over it.</p>
+    </blockquote>
+
+    <h3 id="definitions">Definitions</h3>
     <p>As has been said, NumpadIPA makes use of your numpad. Three keys in particular are of real importance. These are <kbd>Num Add</kbd>, <kbd>Num Enter</kbd>, and <kbd>Num Ins</kbd>, which are used as <em>modifier keys</em>. You hold these keys and then press another to produce a character from the International Phonetic Alphabet.</p>
 
     <p>I have tried to create <em>some form</em> of logic behind all this, but your perception of logic might differ, and sometimes it was simply impossible to create a logical shortcut. That being said, the <kbd>Num Add</kbd> key (abbreviated <kbd>Add</kbd>) is used, generally, for fortition of the original glyph; the <kbd>Num Enter</kbd> key (abbreviated <kbd>Ent</kbd>) is used for lenition; and the <kbd>Num Ins</kbd> key (abbreviated <kbd>Ins</kbd>) is used for an alternate version of the original glyph, but this definition should be taken very lightly.</p>
@@ -473,7 +479,7 @@
     </table>
 
     <h4 id="other">Other</h4>
-    <p>You might have noticed two keys missing here, namely <kbd>Num Div</kbd>, which looks like <kbd>/</kbd> on your numpad, and <kbd>Num 5</kbd>, sometimes also called <kbd>Num Clear</kbd>. These both have different functions compared to the rest, and function as <a href="https://en.wikipedia.org/wiki/Dead_key">dead keys</a>, instead of regular modifier keys. This means that you press <i>and release</i> the keys before pressing another.</p>
+    <p>You might have noticed two keys missing here, namely <kbd>Num Div</kbd>, which looks like <kbd>/</kbd> on your numpad, and <kbd>Num 5</kbd>, sometimes also called <kbd>Num Clear</kbd>. These both have different functions compared to the rest, and function as <a href="https://en.wikipedia.org/wiki/Dead_key">dead keys</a>, instead of regular modifier keys. This means that you press <em>and release</em> the keys before pressing another.</p>
     <p>The <kbd>Num Div</kbd> key has two functions, on it's own it produces superscript numbers and letters. This supports numbers zero to nine, the Latin alphabet and most IPA characters. This can be used for aspiration and labialization, ie. /pʰ/ and /tʷ/. To type IPA superscript characters, first type <kbd>Num Div</kbd> and then the combination for the character, ie. <kbd>Num Div</kbd> & <kbd>Add</kbd><kbd>h</kbd> to produce /ʱ/. Combined to make <kbd>Num Ins</kbd><kbd>Num Div</kbd> it produces subscript numbers and letters, this has way less supported characters. These limatations are due to Unicode, not the keyboard layout. For a list of supported super and subscript characters, see <a href="https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts">this Wikipedia page.</a></p>
     <p>The <kbd>Num 5</kbd> key can be combined with all three modifiers, to produce <a href="https://en.wikipedia.org/wiki/Precomposed_character">precomposed characters</a>. Without a modifier, it produces a character with a macron (similar to <kbd>Add</kbd><kbd>3</kbd>). Combined with <kbd>Num Add</kbd>, it produces a character with a caron (similar to <kbd>Shift</kbd><kbd>Ins</kbd><kbd>Num 9</kbd>). Combined with <kbd>Num Enter</kbd>, it produces a character with an ogonek, ie. "ą". Combined with <kbd>Num Ins</kbd>, it produces a character with an underdot, ie. "ụ". All of the precomposed characters can also be typed in uppercase if you hold shift, ie <kbd>Shift</kbd><kbd>Add</kbd><kbd>Num 5</kbd> & <kbd>c</kbd> produces "Č". These all serve mainly for conlangers who might use these diacritics, in precomposed characters, for romanizations or orthographies.</p>
     <h3 id="overview">Overview</h3>
@@ -498,7 +504,7 @@
         <th>Glottal</th>
       </tr>
       <tr>
-        <td style="text-align: left;" valign="top" rowspan="2"><b>Plosive</b></td>
+        <td style="text-align: left;" valign="top" rowspan="2"><strong>Plosive</strong></td>
         <td><kbd>p</kbd></td>
         <td></td>
         <td></td>
@@ -525,7 +531,7 @@
         <td></td>
       </tr>
       <tr>
-        <td style="text-align: left;"><b>Nasal</b></td>
+        <td style="text-align: left;"><strong>Nasal</strong></td>
         <td><kbd>m</kbd></td>
         <td><kbd>Ins</kbd><kbd>m</kbd></td>
         <td></td>
@@ -539,7 +545,7 @@
         <td></td>
       </tr>
       <tr>
-        <td style="text-align: left;"><b>Trill</b></td>
+        <td style="text-align: left;"><strong>Trill</strong></td>
         <td><kbd>Add</kbd><kbd>b</kbd></td>
         <td></td>
         <td></td>
@@ -553,7 +559,7 @@
         <td></td>
       </tr>
       <tr>
-        <td style="text-align: left;"><b>Tap</b></td>
+        <td style="text-align: left;"><strong>Tap</strong></td>
         <td></td>
         <td><kbd>Add</kbd><kbd>v</kbd></td>
         <td></td>
@@ -567,7 +573,7 @@
         <td></td>
       </tr>
       <tr>
-        <td style="text-align: left;" valign="top" rowspan="2"><b>Fricative</b></td>
+        <td style="text-align: left;" valign="top" rowspan="2"><strong>Fricative</strong></td>
         <td><kbd>Ent</kbd><kbd>f</kbd></td>
         <td><kbd>f</kbd></td>
         <td><kbd>Ent</kbd><kbd>t</kbd></td>
@@ -594,7 +600,7 @@
         <td><kbd>Add</kbd><kbd>h</kbd></td>
       </tr>
       <tr>
-        <td valign="top" rowspan="2" style="text-align: left; background-color:rgb(246, 248, 250)"><b>Lat. Fric.</b></td>
+        <td valign="top" rowspan="2" style="text-align: left; background-color:rgb(246, 248, 250)"><strong>Lat. Fric.</strong></td>
         <td></td>
         <td></td>
         <td></td>
@@ -621,7 +627,7 @@
         <td></td>
       </tr>
       <tr>
-        <td style="text-align: left;"><b>Approxim.</b></td>
+        <td style="text-align: left;"><strong>Approxim.</strong></td>
         <td></td>
         <td><kbd>Add</kbd><kbd>f</kbd></td>
         <td></td>
@@ -635,7 +641,7 @@
         <td></td>
       </tr>
       <tr>
-        <td style="text-align: left;"><b>Lat. Appr.</b></td>
+        <td style="text-align: left;"><strong>Lat. Appr.</strong></td>
         <td></td>
         <td></td>
         <td></td>
@@ -742,7 +748,7 @@
           <th colspan="2">Back</th>
         </tr>
         <tr>
-          <td style="text-align: left;"><b>Close</b></td>
+          <td style="text-align: left;"><strong>Close</strong></td>
           <td><kbd>i</kbd></td>
           <td><kbd>y</kbd></td>
           <td><kbd>Add</kbd><kbd>i</kbd></td>
@@ -769,7 +775,7 @@
           <td><kbd>o</kbd></td>
         </tr>
         <tr>
-          <td style="text-align: left;"><b>Mid</b></td>
+          <td style="text-align: left;"><strong>Mid</strong></td>
           <td></td>
           <td></td>
           <td style="text-align: center;" colspan=2><kbd>Ent</kbd><kbd>e</kbd></td>
@@ -794,7 +800,7 @@
           <td></td>
         </tr>
         <tr>
-          <td style="text-align: left;"><b>Open</b></td>
+          <td style="text-align: left;"><strong>Open</strong></td>
           <td><kbd>a</kbd></td>
           <td><kbd>Ins</kbd><kbd>f</kbd></td>
           <td></td>
@@ -812,7 +818,7 @@
     <h2 id="contribution">Contribution</h2>
     <a href="https://github.com/Coretteket/numpadipa" class="button">Github</a>
     <h2 id="changelog">Changelog</h2>
-    <p><strong>v0.1-alpha / Pre-release</strong></p>
+    <h4>v0.1-alpha / Pre-release</h4>
     <ul>
       <li>Most of the 122 characters in the IPA mapped</li>
       <li>Diacritics, tonal markers and suprasegmental markers mapped</li>
