@@ -116,7 +116,7 @@ SetNumLockState, Off
             ,y: "Y̌" ;
             ,z: "Ž"
             ,1: "Æ̌" ;
-            ,2: "Ǯ"} ;
+            ,2: "Ǯ"} 
     ogonek := {a: "ą"
             ,e: "ę"
             ,i: "į"
@@ -163,7 +163,7 @@ SetNumLockState, Off
         ,d: "Ḍ"
         ,e: "Ẹ"
         ,f: "F̣" ;
-        ,g: "g̣" ;
+        ,g: "G̣" ;
         ,h: "Ḥ"
         ,i: "Ị"
         ,j: "J̣" ;
@@ -172,7 +172,7 @@ SetNumLockState, Off
         ,m: "Ṃ"
         ,n: "Ṇ"
         ,o: "Ọ"
-        ,p: "p̣" ;
+        ,p: "P̣" ;
         ,q: "Q̣" ;
         ,r: "Ṛ"
         ,s: "Ṣ"
