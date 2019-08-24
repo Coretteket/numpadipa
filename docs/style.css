@@ -5754,6 +5754,18 @@ pre {
 	font-size: 14px
 }
 
+#downdonate {
+	display: none;
+	padding: 10px 10px 10px 20px;
+	border-left: 5px solid #D18A19; 
+	/*background-color: rgb(247, 247, 247);*/
+	margin: 15px 20px;
+}
+
+#downdonate h3 {
+	margin-top: 0px;
+}
+
 blockquote {
   font-size: 14px;
 }
