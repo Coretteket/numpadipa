@@ -588,7 +588,7 @@ SetNumLockState, Off
     NumpadAdd & NumpadPgup::
         loop
         {
-        If GetKeyState("LShift", "P") {
+        If GetKeyState("Shift", "P") {
             SendInput ̍
             break
         } else { 
@@ -600,7 +600,7 @@ SetNumLockState, Off
     NumpadEnter & NumpadPgup::
         loop
         {
-        If GetKeyState("LShift", "P") {
+        If GetKeyState("Shift", "P") {
             SendInput ̑
             break
         } else { 
@@ -612,7 +612,7 @@ SetNumLockState, Off
     NumpadIns & NumpadPgup::
         loop
         {
-        If GetKeyState("LShift", "P") {
+        If GetKeyState("Shift", "P") {
             SendInput ̌
             break
         } else { 
@@ -638,7 +638,7 @@ SetNumLockState, Off
     NumpadAdd & NumpadEnd::
         loop
         {
-        If GetKeyState("LShift", "P") {
+        If GetKeyState("Shift", "P") {
             SendInput ˕
             break
         } else { 
@@ -663,7 +663,7 @@ SetNumLockState, Off
     NumpadAdd & NumpadPgdn::
         loop
         {
-        If GetKeyState("LShift", "P") {
+        If GetKeyState("Shift", "P") {
             SendInput ͗
             break
         } else { 
@@ -675,7 +675,7 @@ SetNumLockState, Off
     NumpadEnter & NumpadPgdn::
         loop
         {
-        If GetKeyState("LShift", "P") {
+        If GetKeyState("Shift", "P") {
             SendInput ˗
             break
         } else { 
@@ -687,7 +687,7 @@ SetNumLockState, Off
     NumpadIns & NumpadPgdn::
         loop
         {
-        If GetKeyState("LShift", "P") {
+        If GetKeyState("Shift", "P") {
             SendInput ˖
             break
         } else { 
@@ -722,7 +722,7 @@ SetNumLockState, Off
     NumpadClear::
     loop
     {
-    If GetKeyState("LShift", "P") {
+    If GetKeyState("Shift", "P") {
         Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}{NumpadDiv}{NumpadMult}{NumpadSub}{NumpadHome}{Numpad7}{NumpadUp}{Numpad8}{NumpadPgup}{Numpad9}{NumpadLeft}{Numpad4}{NumpadClear}{Numpad5}{NumpadRight}{Numpad6}{NumpadEnd}{Numpad1}{NumpadDown}{Numpad2}{NumpadPgdn}{Numpad3}{NumpadAdd}{NumpadEnter}{NumpadIns}{Numpad0}{NumpadDot}{NumpadDel}
         SendInput % smacron[key]
         break
@@ -736,7 +736,7 @@ SetNumLockState, Off
     NumpadAdd & NumpadClear::
     loop
     {
-    If GetKeyState("LShift", "P") {
+    If GetKeyState("Shift", "P") {
         Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}{NumpadDiv}{NumpadMult}{NumpadSub}{NumpadHome}{Numpad7}{NumpadUp}{Numpad8}{NumpadPgup}{Numpad9}{NumpadLeft}{Numpad4}{NumpadClear}{Numpad5}{NumpadRight}{Numpad6}{NumpadEnd}{Numpad1}{NumpadDown}{Numpad2}{NumpadPgdn}{Numpad3}{NumpadAdd}{NumpadEnter}{NumpadIns}{Numpad0}{NumpadDot}{NumpadDel}
         SendInput % scaron[key]
         break
@@ -750,7 +750,7 @@ SetNumLockState, Off
     NumpadEnter & NumpadClear::
     loop 
     {
-    If GetKeyState("LShift", "P") {
+    If GetKeyState("Shift", "P") {
         Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}{NumpadDiv}{NumpadMult}{NumpadSub}{NumpadHome}{Numpad7}{NumpadUp}{Numpad8}{NumpadPgup}{Numpad9}{NumpadLeft}{Numpad4}{NumpadClear}{Numpad5}{NumpadRight}{Numpad6}{NumpadEnd}{Numpad1}{NumpadDown}{Numpad2}{NumpadPgdn}{Numpad3}{NumpadAdd}{NumpadEnter}{NumpadIns}{Numpad0}{NumpadDot}{NumpadDel}
         SendInput % sogonek[key]
         break
@@ -764,7 +764,7 @@ SetNumLockState, Off
     NumpadIns & NumpadClear::
     loop
     {
-    If GetKeyState("LShift", "P") {
+    If GetKeyState("Shift", "P") {
         Input, key, L1, {LControl}{RControl}{LAlt}{RAlt}{LWin}{RWin}{F1}{F2}{F3}{F4}{F5}{F6}{F7}{F8}{F9}{F10}{F11}{F12}{Left}{Right}{Up}{Down}{Home}{End}{PgUp}{PgDn}{Del}{Ins}{BS}{CapsLock}{NumLock}{PrintScreen}{Space}{LShift}{RShift}{NumpadDiv}{NumpadMult}{NumpadSub}{NumpadHome}{Numpad7}{NumpadUp}{Numpad8}{NumpadPgup}{Numpad9}{NumpadLeft}{Numpad4}{NumpadClear}{Numpad5}{NumpadRight}{Numpad6}{NumpadEnd}{Numpad1}{NumpadDown}{Numpad2}{NumpadPgdn}{Numpad3}{NumpadAdd}{NumpadEnter}{NumpadIns}{Numpad0}{NumpadDot}{NumpadDel}
         SendInput % sdot[key]
         break
