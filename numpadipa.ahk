@@ -715,10 +715,10 @@ SetNumLockState, Off
     return
 
 ; PRECOMPOSED 
-    LShift & NumpadClear::Send {NumpadClear}
-    LShift & NumpadEnter::Send {Help}
-    LShift & NumpadAdd::Send {Help}
-
+    Shift & NumpadClear::Send {NumpadClear}
+    Shift & NumpadEnter::Send {Help}
+    Shift & NumpadAdd::Send {Help}
+    
     NumpadClear::
     loop
     {
