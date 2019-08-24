@@ -490,9 +490,10 @@
   <h3 id="overview">Overview</h3>
   <p>Some might find it easier to learn this keyboard layout from the perspective of the actual phonetic charts. These tables below are an attempt to help with that. The actual symbols are not listed, as these can be easily found <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/8/8e/IPA_chart_2018.pdf">elsewhere</a> and would only complicate these tables. Voiceless and voiced consonants, and rounded and unrounded vowels are put in separate rows.</p>
 
-  <div class="d-lg-none">All these tables are horizontally scrollable, if they do not display fully.</div>
+  <p>Click on <strong><span class="toggletable">toggle</span></strong> on each header to show or hide the individual tables below. <span class="d-lg-none">All these tables are horizontally scrollable, if they do not display fully.</span></p>
 
-  <h4 id="pulmonic-consonants">Pulmonic consonants</h4>
+  <h4 id="pulmonic-consonants">Pulmonic consonants [<span class="toggletable" onclick="hidetable('hidepulmonic')">toggle</span>]</h4>
+  <div id="hidepulmonic">
   <table class="tableright">
     <tr>
       <th></th>
@@ -660,9 +661,10 @@
       <td></td>
     </tr>
   </table>
+  </div>
 
-  <h4 id="non-pulmonic-consonants">Non-pulmonic consonants</h4>
-
+  <h4 id="non-pulmonic-consonants">Non-pulmonic consonants [<span class="toggletable" onclick="hidetable('hidenonpulmonic')">toggle</span>]</h4>
+  <div id="hidenonpulmonic">
   <table>
     <thead>
       <tr>
@@ -699,8 +701,10 @@
       </tr>
     </tbody>
   </table>
+  </div>
 
-  <h4 id="other-consonants">Other consonants</h4>
+  <h4 id="other-consonants">Other consonants [<span class="toggletable" onclick="hidetable('hideother')">toggle</span>]</h4>
+  <div id="hideother">
   <table class="tableright">
     <tr>
       <td style="text-align: center">ʍ</td>
@@ -743,8 +747,10 @@
       <td><kbd>Ins</kbd><kbd>w</kbd></td>
     </tr>
   </table>
+  </div>
 
-  <h4 id="vowels-1">Vowels</h4>
+  <h4 id="vowels-1">Vowels [<span class="toggletable" onclick="hidetable('hidevowels')">toggle</span>]</h4>
+  <div id="hidevowels">
   <table id="tableright">
       <tr>
         <th></th>
@@ -813,7 +819,8 @@
         <td><kbd>Ent</kbd><kbd>f</kbd></td>
         <td><kbd>Add</kbd><kbd>o</kbd></td>
       </tr>
-    </table>
+  </table>
+  </div>
 
   <h2 id="donation">Donation</h2>
   <p>If you like what you see here, please consider donating. What started as a small idea has grown to become a project I've worked on all summer. From coming up with a workable concept, to figuring out an entire scripting language, from testing and optimizing the layout, to documenting every shortcut online, I have spent hours creating NumpadIPA.</p>
@@ -852,6 +859,14 @@
 function donate() {
 var x = document.getElementById("downdonate");
 x.style.display = "block";
+}
+function hidetable(p1) {
+var x = document.getElementById(p1);
+if (x.style.display === "none") {
+  x.style.display = "block";
+} else {
+  x.style.display = "none";
+}
 }
 </script>
 

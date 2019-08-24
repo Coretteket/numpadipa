@@ -5766,6 +5766,11 @@ pre {
 	margin-top: 0px;
 }
 
+.toggletable {
+	color: #D18A19;
+	cursor: pointer;
+}
+
 blockquote {
   font-size: 14px;
 }
